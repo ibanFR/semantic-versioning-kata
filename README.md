@@ -1,9 +1,31 @@
-# Semantic Versioning
+# Semantic Versioning Kata
 
-Semantic Versioning (SemVer) is a versioning scheme for software that aims to convey meaning about the underlying
-changes with each new release. The version number is composed of three parts: MAJOR.MINOR.PATCH.
+Use SemVer to version your code and automate the release process for the Lift Button kata.
 
+## Semantic Versioning
 
+Use commit messages to increment the versions of your software.
+
+### Commit message format
+- The commit message must be in the format of `type: subject`.
+
+## Lift Button
+
+See [Lift Button](src/test/java/ie/etu/liftbutton/readme.md) for the details of the kata.
+
+You have been provided with an initial TEST LIST:
+
+```java
+    //TEST LIST
+    // [] - doors should be CLOSED when lift is created
+    // [] - lights should be OFF when lift is created
+    // [] - should open the lift doors
+    // [] - press button when lift doors CLOSED: light should turn ON
+    // [] - press button when light already ON and doors CLOSED : light should stay ON
+    // [] - when doors OPEN light should turn OFF
+    // [] - press button when lift doors open: light should be OFF
+
+```
 
 ## Semantic Release
 Semantic Release is a tool for automating the versioning and package publishing process. It uses Semantic Versioning to determine
