@@ -1,6 +1,5 @@
-package ie.etu.liftbutton;
+package com.ibanfr.liftbutton;
 
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -17,15 +16,13 @@ class LiftButtonTest {
     // [] - press button when lift doors open: light should be OFF
 
     @Test
-    @DisplayName("doors should be closed when lift is created")
     void doors_should_be_closed_when_lift_is_created() {
 
-        //given
-
         //when
+        Lift lift = new Lift();
 
         //then
-        assertThat(false).as("Not implemented")
-                .isTrue();
+        assertThat(lift.doors())
+                .isEqualTo(DoorStatus.CLOSED);
     }
 }
