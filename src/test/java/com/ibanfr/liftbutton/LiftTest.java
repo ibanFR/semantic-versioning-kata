@@ -1,6 +1,5 @@
 package com.ibanfr.liftbutton;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -10,10 +9,10 @@ class LiftTest {
     //TEST LIST
     //[X] - doors should be CLOSED when Lift is created
     //[X] - lights should be OFF when Lift is created
-    //[X] - should switch lights ON when button is pressed
+    //[X] - should switch lights ON when button is pressed AND doors are CLOSED
     //[X] - should OPEN the lift doors when lift arrives
-    //[] - should switch OFF the lights when lift arrives
-    //[] - lights should be OFF when button is pressed AND doors are OPEN
+    //[X] - should switch OFF the lights when lift arrives
+    //[X] - lights should be OFF when button is pressed AND doors are OPEN
 
     /**
      * doors should be CLOSED when Lift is created
@@ -96,6 +95,30 @@ class LiftTest {
 
         //when
         lift.arrive();
+
+        //then
+        assertThat(lift.lights())
+                .as("lights should be OFF")
+                .isEqualTo(LightStatus.OFF);
+
+    }
+
+    /**
+     * lights should be OFF when button is pressed AND doors are OPEN
+     */
+    @Test
+    void lights_should_be_OFF_when_button_is_pressed_AND_doors_are_OPEN() {
+        //given
+        Lift lift = new Lift();
+
+        //given
+        lift.pressButton();
+
+        //given
+        lift.arrive();
+
+        //when
+        lift.pressButton();
 
         //then
         assertThat(lift.lights())

@@ -15,6 +15,9 @@ public class Lift {
     }
 
     public void pressButton() {
+        if (doorStatus == DoorStatus.OPEN) {
+            return;
+        }
         lightStatus = LightStatus.ON;
     }
 
