@@ -51,7 +51,6 @@ class LiftTest {
      * should switch lights ON when button is pressed
      */
     @Test
-    @Disabled("Not implemented yet")
     void should_switch_lights_ON_when_button_is_pressed() {
         //given
         Lift lift = new Lift();

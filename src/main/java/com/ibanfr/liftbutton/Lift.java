@@ -15,7 +15,7 @@ public class Lift {
     }
 
     public void pressButton() {
-
+        lightStatus = LightStatus.ON;
     }
 
     public LightStatus lights() {
