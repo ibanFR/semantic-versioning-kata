@@ -21,4 +21,8 @@ public class Lift {
     public LightStatus lights() {
         return lightStatus;
     }
+
+    public void arrive() {
+        doorStatus = DoorStatus.OPEN;
+    }
 }

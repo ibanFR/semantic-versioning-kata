@@ -11,7 +11,7 @@ class LiftTest {
     //[X] - doors should be CLOSED when Lift is created
     //[X] - lights should be OFF when Lift is created
     //[X] - should switch lights ON when button is pressed
-    //[] - should OPEN the lift doors when lift arrives
+    //[X] - should OPEN the lift doors when lift arrives
     //[] - should switch OFF the lights when lift arrives
     //[] - lights should be OFF when button is pressed AND doors are OPEN
 
@@ -62,6 +62,24 @@ class LiftTest {
         assertThat(lift.lights())
                 .as("lights should be ON")
                 .isEqualTo(LightStatus.ON);
+
+    }
+
+    /**
+     * should OPEN the lift doors when lift arrives
+     */
+    @Test
+    void should_OPEN_the_lift_doors_when_lift_arrives() {
+        //given
+        Lift lift = new Lift();
+
+        //when
+        lift.arrive();
+
+        //then
+        assertThat(lift.doors())
+                .as("doors should be OPEN")
+                .isEqualTo(DoorStatus.OPEN);
 
     }
 
