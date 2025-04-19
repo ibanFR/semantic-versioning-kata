@@ -1,59 +1,86 @@
 # Semantic Versioning Kata
 
-Use [SemVer](https://semver.org/) specification to automate the release of your software while solving the Lift Button kata.
+Learn how to apply [Semantic Versioning (SemVer)](https://semver.org/) to automate software releases by working through
+the Lift Button Kata.
 
-### Commit message format
+This code kata will help you understand versioning principles and integrate them into your development workflow.
 
-The commit message must be in the following format:
+## Commit message format
 
-```
+Follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format for commit messages to ensure
+proper versioning:
+
+```conventionalcommit
 <type>: <subject>
 <BLANK LINE>
 <optional body>
 <BLANK LINE>
 <optional footer>
 ```
+For example:
+```conventionalcommit
+feat: add lights() method to Lift class to query the light status
+```
 
 ### Commit message types
 
-Must be one of the following:
+Use one of the following types to categorize your changes:
 
-| Type         | Description                                                                             |
-|--------------|-----------------------------------------------------------------------------------------|
-| **feat**     | A new feature                                                                           |
-| **fix**      | A bug fix                                                                               |
-| **refactor** | A code change that neither fixes a bug nor adds a feature                               |
-| **test**     | Adding missing tests or correcting existing tests                                       |
-| **docs**     | Documentation only changes                                                              |
-| **build**    | Changes that affect the build system or external dependencies (pom.xml, etc)            |
-| **ci**       | Changes to our CI configuration files and scripts (examples: Github Actions, SauceLabs) |
+| Type         | Description                                                                    |
+|--------------|--------------------------------------------------------------------------------|
+| **feat**     | A new feature                                                                  |
+| **fix**      | A bug fix                                                                      |
+| **refactor** | A code change that neither fixes a bug nor adds a feature                      |
+| **test**     | Adding missing tests or correcting existing tests                              |
+| **docs**     | Documentation only changes                                                     |
+| **build**    | Changes that affect the build system or external dependencies (`pom.xml`, etc) |
+| **ci**       | Changes to our CI configuration files and scripts (`release.yml`, etc)         |
+| **chore**    | Other changes that don’t modify src or test files                              |
 
-## Automate Release process
+## Automated Release process
 
-Automate the release process using [GitHub Actions](https://github.com/ibanFR/semantic-versioning-kata/actions) and
-[Semantic Release](https://semantic-release.gitbook.io/semantic-release). This will allow you to automatically create a
-release when you push to the main branch.
+New features and fixes are immediately available to the users after a commit is pushed to the main branch.
 
-## Lift Button - PART ONE
+This repository uses [Semantic Release](https://semantic-release.gitbook.io/semantic-release) to analyze commit 
+messages, automatically determine the next semantic version, and publish a new release.
+
+## Lift Button - Initial releases
 
 You have been provided with an initial TEST LIST for the Lift Button kata:
 
 ```java
 //TEST LIST
-//[] - doors should be OPEN when Lift is created
-//[] - should CLOSE the lift doors
+//[] - doors should be CLOSED when Lift is created
 //[] - should switch lights ON when button is pressed
 //[] - should OPEN the lift doors when lift arrives
-//[] - should switch OFF the lights when doors OPEN/lift arrives
-//[] - lights should be ON when button is pressed AND doors are CLOSED
+//[] - should switch OFF the lights when lift arrives
 //[] - lights should be OFF when button is pressed AND doors are OPEN
 ```
 
-Use commit messages to increment the versions of your software while solving the Lift Button kata.
-See [Lift Button](src/test/java/com/ibanfr/liftbutton/readme.md) for the full details of the kata.
+Use the provided test list to guide your implementation. Write one test at a time and commit your changes using semantic
+commit messages.
 
-## Lift Button - PART TWO
-Force a BREAKING CHANGE
+Check your [repository's releases and tags](https://docs.github.com/en/repositories/releasing-projects-on-github/viewing-your-repositorys-releases-and-tags) after every commit to the main branch.
+
+Refer to [Lift Button](src/test/java/com/ibanfr/liftbutton/readme.md) for detailed requirements.
+
+## Lift Button - Releasing a breaking change
+
+Following the release of version 1.y.z, customers raised a safety concern: the lift doors should not be closed when the 
+lift is initialized! As a result, they have requested a change so that the doors remain open upon lift creation.
+
+ This change may require users of
+version v.1.y.z to modify their code to accommodate the new behavior, so it's a breaking change.
+
+Update the code to implement the new requirement and release a new version of the Lift Button.
+
+### Commit message footer
+Use the commit footer to include information about breaking changes.For example:
+```
+BREAKING CHANGE: <breaking change summary>
+<BLANK LINE>
+<breaking change description + migration instructions>
+```
 
 
 
