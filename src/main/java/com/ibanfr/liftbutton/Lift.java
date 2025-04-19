@@ -24,5 +24,6 @@ public class Lift {
 
     public void arrive() {
         doorStatus = DoorStatus.OPEN;
+        lightStatus = LightStatus.OFF;
     }
 }

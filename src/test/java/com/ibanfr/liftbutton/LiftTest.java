@@ -83,4 +83,24 @@ class LiftTest {
 
     }
 
+    /**
+     * should switch OFF the lights when lift arrives
+     */
+    @Test
+    void should_switch_OFF_the_lights_when_lift_arrives() {
+        //given
+        Lift lift = new Lift();
+
+        //given
+        lift.pressButton();
+
+        //when
+        lift.arrive();
+
+        //then
+        assertThat(lift.lights())
+                .as("lights should be OFF")
+                .isEqualTo(LightStatus.OFF);
+
+    }
 }
