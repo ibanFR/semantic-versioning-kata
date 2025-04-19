@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class LiftTest {
 
     //TEST LIST
-    //[] - doors should be CLOSED when Lift is created
+    //[X] - doors should be CLOSED when Lift is created
     //[] - should switch lights ON when button is pressed
     //[] - should OPEN the lift doors when lift arrives
     //[] - should switch OFF the lights when lift arrives
@@ -19,14 +19,13 @@ class LiftTest {
     @Test
     void doors_should_be_CLOSED_when_Lift_is_created() {
 
-        //given
-
         //when
+        Lift lift = new Lift();
 
         //then
-        assertThat(true)
+        assertThat(lift.doors())
                 .as("doors should be CLOSED")
-                .isEqualTo(false);
+                .isEqualTo(DoorStatus.CLOSED);
 
     }
 }
