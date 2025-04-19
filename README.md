@@ -75,7 +75,7 @@ version v.1.y.z to modify their code to accommodate the new behavior, so it's a 
 Update the code to implement the new requirement and release a new version of the Lift Button.
 
 ### Commit message footer
-Use the commit footer to include information about breaking changes.For example:
+Use the commit footer to include information about breaking changes. For example:
 ```
 BREAKING CHANGE: <breaking change summary>
 <BLANK LINE>
