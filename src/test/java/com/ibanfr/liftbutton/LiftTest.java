@@ -6,14 +6,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class LiftTest {
 
-    //TEST LIST
-    //[X] - doors should be CLOSED when Lift is created
-    //[X] - lights should be OFF when Lift is created
-    //[X] - should switch lights ON when button is pressed AND doors are CLOSED
-    //[X] - should OPEN the lift doors when lift arrives
-    //[X] - should switch OFF the lights when lift arrives
-    //[X] - lights should be OFF when button is pressed AND doors are OPEN
-
     /**
      * doors should be CLOSED when Lift is created
      */
