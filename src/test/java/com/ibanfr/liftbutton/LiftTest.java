@@ -14,7 +14,7 @@ class LiftTest {
     //[] - lights should be OFF when button is pressed AND doors are OPEN
 
     /**
-     * doors should be OPEN when Lift is created
+     * doors should be CLOSED when Lift is created
      */
     @Test
     void doors_should_be_CLOSED_when_Lift_is_created() {
