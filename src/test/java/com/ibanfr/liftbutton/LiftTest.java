@@ -1,16 +1,14 @@
 package com.ibanfr.liftbutton;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 class LiftTest {
 
-    /**
-     * doors should be CLOSED when Lift is created
-     */
     @Test
-    void doors_should_be_CLOSED_when_Lift_is_created() {
+    void doors_should_be_OPEN_when_Lift_is_created() {
 
         //when
         Lift lift = new Lift();
@@ -18,13 +16,10 @@ class LiftTest {
         //then
         assertThat(lift.doors())
                 .as("doors should be CLOSED")
-                .isEqualTo(DoorStatus.CLOSED);
+                .isEqualTo(DoorStatus.OPEN);
 
     }
 
-    /**
-     * lights should be OFF when Lift is created
-     */
     @Test
     void lights_should_be_OFF_when_Lift_is_created() {
 
@@ -38,13 +33,28 @@ class LiftTest {
 
     }
 
-    /**
-     * should switch lights ON when button is pressed
-     */
     @Test
-    void should_switch_lights_ON_when_button_is_pressed() {
+    void should_close_the_Lift_doors() {
         //given
         Lift lift = new Lift();
+
+        //when
+        lift.closeDoors();
+
+        //then
+        assertThat(lift.doors())
+                .as("doors should be CLOSED")
+                .isEqualTo(DoorStatus.CLOSED);
+
+    }
+
+    @Test
+    void should_switch_lights_ON_when_button_is_pressed_and_doors_are_CLOSED() {
+        //given
+        Lift lift = new Lift();
+
+        //given
+        lift.closeDoors();
 
         //when
         lift.pressButton();
@@ -56,9 +66,6 @@ class LiftTest {
 
     }
 
-    /**
-     * should OPEN the lift doors when lift arrives
-     */
     @Test
     void should_OPEN_the_lift_doors_when_lift_arrives() {
         //given
@@ -74,9 +81,6 @@ class LiftTest {
 
     }
 
-    /**
-     * should switch OFF the lights when lift arrives
-     */
     @Test
     void should_switch_OFF_the_lights_when_lift_arrives() {
         //given
@@ -95,9 +99,6 @@ class LiftTest {
 
     }
 
-    /**
-     * lights should be OFF when button is pressed AND doors are OPEN
-     */
     @Test
     void lights_should_be_OFF_when_button_is_pressed_AND_doors_are_OPEN() {
         //given

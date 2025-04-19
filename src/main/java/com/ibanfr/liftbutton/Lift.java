@@ -6,7 +6,7 @@ public class Lift {
     private LightStatus lightStatus;
 
     public Lift() {
-        doorStatus = DoorStatus.CLOSED;
+        doorStatus = DoorStatus.OPEN;
         lightStatus = LightStatus.OFF;
     }
 
@@ -28,5 +28,9 @@ public class Lift {
     public void arrive() {
         doorStatus = DoorStatus.OPEN;
         lightStatus = LightStatus.OFF;
+    }
+
+    public void closeDoors() {
+        doorStatus = DoorStatus.CLOSED;
     }
 }
