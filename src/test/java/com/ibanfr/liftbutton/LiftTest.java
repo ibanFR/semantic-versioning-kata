@@ -4,22 +4,20 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class LiftButtonTest {
+class LiftTest {
 
     //TEST LIST
-    //[] - doors should be OPEN when Lift is created
-    //[] - should CLOSE the lift doors
+    //[] - doors should be CLOSED when Lift is created
     //[] - should switch lights ON when button is pressed
     //[] - should OPEN the lift doors when lift arrives
-    //[] - should switch OFF the lights when doors OPEN
-    //[] - lights should be ON when button is pressed AND doors are CLOSED
+    //[] - should switch OFF the lights when lift arrives
     //[] - lights should be OFF when button is pressed AND doors are OPEN
 
     /**
      * doors should be OPEN when Lift is created
      */
     @Test
-    void doors_should_be_OPEN_when_Lift_is_created() {
+    void doors_should_be_CLOSED_when_Lift_is_created() {
 
         //given
 
@@ -27,7 +25,7 @@ class LiftButtonTest {
 
         //then
         assertThat(true)
-                .as("doors should be OPEN")
+                .as("doors should be CLOSED")
                 .isEqualTo(false);
 
     }
