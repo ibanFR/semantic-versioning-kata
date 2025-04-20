@@ -5,10 +5,13 @@ the Lift Button Kata.
 
 This code kata will help you understand versioning principles and integrate them into your development workflow.
 
+## Getting started
+You can start by [forking](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository) or [duplicating](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) this repository.
+
+
 ## Commit message format
 
-Follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format for commit messages to ensure
-proper versioning:
+Follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format for commit messages to ensure proper versioning:
 
 ```conventionalcommit
 <type>: <subject>
@@ -44,7 +47,7 @@ New features and fixes are immediately available to the users after a commit is 
 This repository uses [Semantic Release](https://semantic-release.gitbook.io/semantic-release) to analyze commit 
 messages, automatically determine the next semantic version, and publish a new release.
 
-## Lift Button - Initial releases
+## Initial releases for Lift Button
 
 You have been provided with an initial TEST LIST for the Lift Button kata:
 
@@ -64,13 +67,13 @@ Check your [repository's releases and tags](https://docs.github.com/en/repositor
 
 Refer to [Lift Button](src/test/java/com/ibanfr/liftbutton/readme.md) for detailed requirements.
 
-## Lift Button - Releasing a breaking change
+## Releasing a breaking change
 
-Following the release of version 1.y.z, customers raised a safety concern: the lift doors should not be closed when the 
+Following the release of version `v1.y.z`, customers raised a safety concern: the lift doors should not be closed when the 
 lift is initialized! As a result, they have requested a change so that the doors remain open upon lift creation.
 
  This change may require users of
-version v.1.y.z to modify their code to accommodate the new behavior, so it's a breaking change.
+version `v1.y.z` to modify their code to accommodate the new behavior, so it's a breaking change.
 
 Update the code to implement the new requirement and release a new version of the Lift Button.
 
