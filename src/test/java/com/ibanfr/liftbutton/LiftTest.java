@@ -6,19 +6,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class LiftTest {
 
-    /**
-     * doors should be CLOSED when Lift is created
-     */
     @Test
-    void doors_should_be_CLOSED_when_Lift_is_created() {
+    void doors_should_be_OPEN_when_Lift_is_created() {
 
         //when
         Lift lift = new Lift();
 
         //then
         assertThat(lift.doors())
-                .as("doors should be CLOSED")
-                .isEqualTo(DoorStatus.CLOSED);
+                .as("doors should be OPEN")
+                .isEqualTo(DoorStatus.OPEN);
 
     }
 
@@ -45,6 +42,9 @@ class LiftTest {
     void should_switch_lights_ON_when_button_is_pressed() {
         //given
         Lift lift = new Lift();
+
+        //given
+        lift.closeDoors();
 
         //when
         lift.pressButton();
