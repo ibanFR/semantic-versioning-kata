@@ -9,6 +9,6 @@ open, the light goes out.
 
 This is a state diagram:
 
-![State Diagram](/src/test/resources/images/lift_button_states_transitions.png)
+![State Diagram](docs/assets/images/explanation/lift_button_states_transitions.png)
 
  
