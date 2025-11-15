@@ -13,7 +13,7 @@ This document provides a reference for common Git commands and their usage.
 2. Reset to the previous commit:
     
     ```shell
-    git reset --hard 5e2a7b7645c63746e6f76a8def90576c7665e021
+    git reset --hard 59e5056b4fe8c14665fa7949ab1e881ffcda3c97
     ```
 
 3. Force push to remote:
