@@ -33,12 +33,11 @@ Use one of the following types to categorize your changes:
 |--------------|-------------------------------------------------------------------------------------------|
 | **feat**     | A new feature                                                                             |
 | **fix**      | A bug fix                                                                                 |
-| **refactor** | A code change that neither fixes a bug nor adds a feature                                 |
+| **refactor** | A behavior preserving change (neither fixes a bug nor adds a feature)                     |
 | **test**     | Adding missing tests or correcting existing tests                                         |
 | **docs**     | Documentation only changes                                                                |
 | **build**    | Changes that affect the build system or external dependencies (`pom.xml`, etc)            |
 | **ci**       | Changes to our CI configuration files and scripts (`release.yml`, `.releaserc.json`, etc) |
-| **chore**    | Other changes that don’t modify src or test files                                         |
 
 ## Automated Release process
 

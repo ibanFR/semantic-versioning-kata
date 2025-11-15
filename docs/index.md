@@ -70,11 +70,11 @@ Practice with the Lift Button Kata in your IDE:
 2. Use formalized commit message convention to document changes in the codebase.
 
     ```html
-    | Type     | Description                                               |
-    |----------|-----------------------------------------------------------|
-    | feat     | A new feature                                             |
-    | fix      | A bug fix                                                 |
-    | refactor | A code change that neither fixes a bug nor adds a feature |
+    | Type     | Description                          | 
+    |----------|--------------------------------------|
+    | feat     | A new feature                        |
+    | fix      | A bug fix                            |
+    | refactor | A behavior preserving change         |
     ```
 
 3. New features and fixes are immediately available to the users after a commit is pushed to the main branch.
