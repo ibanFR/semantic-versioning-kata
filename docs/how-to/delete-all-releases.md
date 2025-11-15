@@ -10,7 +10,7 @@ To reset the history of a GitHub repository and delete all releases, you can fol
 2. **Set the Personal Access Token as an environment variable**:
 
     ```shell
-     export $TOKEN="your_personal_access_token_here"
+     export TOKEN="your_personal_access_token_here"
     ```
 
 3. **Use GitHub API to delete all releases**:
