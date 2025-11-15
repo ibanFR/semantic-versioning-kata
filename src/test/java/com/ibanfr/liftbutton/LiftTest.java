@@ -13,11 +13,8 @@ class LiftTest {
     //[] - should switch OFF the lights when lift arrives
     //[] - lights should be OFF when button is pressed and doors are OPEN
 
-    /**
-     * doors should be CLOSED when Lift is created
-     */
     @Test
-    void doors_should_be_CLOSED_when_Lift_is_created() {
+    void doorsShouldBeClosedOnLiftCreation() {
 
         //given
 
@@ -25,7 +22,7 @@ class LiftTest {
 
         //then
         assertThat(true)
-                .as("doors should be CLOSED")
+                .as("doors should be CLOSED when Lift is created")
                 .isEqualTo(false);
 
     }
