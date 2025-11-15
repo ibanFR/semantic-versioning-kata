@@ -97,7 +97,6 @@ Update the code to implement the new requirement and release a new version of th
 Use the commit footer to include information about breaking changes. For example:
 ```
 BREAKING CHANGE: <breaking change summary>
-<BLANK LINE>
 <breaking change description + migration instructions>
 ```
 
