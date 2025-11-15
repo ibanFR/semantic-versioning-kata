@@ -1,5 +1,5 @@
 {
-  "branches": ["main","next"],
+  "branches": ["main"],
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
@@ -14,7 +14,7 @@
       "@semantic-release/git",
       {
         "assets": ["pom.xml"],
-        "message": "chore(release): update Maven version to ${nextRelease.version} [skip ci]"
+        "message": "build(release): release version ${nextRelease.version}"
       }
     ],
     "@semantic-release/github"
