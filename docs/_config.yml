@@ -1,0 +1,55 @@
+title: Semantic Versioning
+description: A starter template for a Jeykll site using the Just the Docs theme!
+theme: just-the-docs
+
+url: https://just-the-docs.github.io
+
+aux_links:
+  Iván Fernández: https://ibanfr.github.io/
+aux_links_new_tab: true
+
+collections:
+  explanation:
+    output: true
+  how-to:
+    output: true
+  reference:
+    output: true
+
+just_the_docs:
+  collections:
+    explanation:
+      name: Explanation
+    how-to:
+      name: How-To
+    reference:
+      name: Reference
+
+defaults:
+  # All regular Jekyll pages
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+
+  # Explanation collection
+  - scope:
+      path: ""
+      type: "explanation"
+    values:
+      layout: default
+
+  # How-to collection
+  - scope:
+      path: ""
+      type: "how-to"
+    values:
+      layout: default
+
+  # Reference collection
+  - scope:
+      path: ""
+      type: "reference"
+    values:
+      layout: default

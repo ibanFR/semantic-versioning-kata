@@ -1,3 +1,7 @@
+---
+title: Reset remote branch to a previous commit
+---
+
 # How-to reset remote branch to a previous commit
 
 1. Find the commit hash:

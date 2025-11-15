@@ -1,3 +1,7 @@
+---
+title: Delete all releases from a GitHub repository
+---
+
 # How-to delete all releases from a GitHub repository
 
 To reset the history of a GitHub repository and delete all releases, you can follow the steps below:

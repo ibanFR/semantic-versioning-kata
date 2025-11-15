@@ -1,3 +1,8 @@
+---
+title: Resources
+layout: default
+---
+
 # Configuration
 
 ## GitHub Actions Configuration
