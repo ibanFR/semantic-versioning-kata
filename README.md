@@ -29,16 +29,16 @@ feat: add lights() method to Lift class to query the light status
 
 Use one of the following types to categorize your changes:
 
-| Type         | Description                                                                    |
-|--------------|--------------------------------------------------------------------------------|
-| **feat**     | A new feature                                                                  |
-| **fix**      | A bug fix                                                                      |
-| **refactor** | A code change that neither fixes a bug nor adds a feature                      |
-| **test**     | Adding missing tests or correcting existing tests                              |
-| **docs**     | Documentation only changes                                                     |
-| **build**    | Changes that affect the build system or external dependencies (`pom.xml`, etc) |
-| **ci**       | Changes to our CI configuration files and scripts (`release.yml`, etc)         |
-| **chore**    | Other changes that don’t modify src or test files                              |
+| Type         | Description                                                                               |
+|--------------|-------------------------------------------------------------------------------------------|
+| **feat**     | A new feature                                                                             |
+| **fix**      | A bug fix                                                                                 |
+| **refactor** | A code change that neither fixes a bug nor adds a feature                                 |
+| **test**     | Adding missing tests or correcting existing tests                                         |
+| **docs**     | Documentation only changes                                                                |
+| **build**    | Changes that affect the build system or external dependencies (`pom.xml`, etc)            |
+| **ci**       | Changes to our CI configuration files and scripts (`release.yml`, `.releaserc.json`, etc) |
+| **chore**    | Other changes that don’t modify src or test files                                         |
 
 ## Automated Release process
 
@@ -70,7 +70,23 @@ Refer to [Lift Button](src/test/java/com/ibanfr/liftbutton/readme.md) for detail
 ## Releasing a breaking change
 
 Following the release of version `v1.y.z`, customers raised a safety concern: the lift doors should not be closed when the 
-lift is initialized! As a result, they have requested a change so that the doors remain open upon lift creation.
+lift is initialized! 
+
+
+As a result, the customers have requested a change so that the doors remain open upon lift creation. Here is the new feature request:
+
+```gherkin
+Feature: Open doors on lift initialization
+  
+  As a safety-conscious user
+  I want the lift doors to be open when the lift is created
+  So that I can ensure safe entry and exit from the lift
+
+  Scenario: Lift Initialization
+    When the Lift is initialized
+    Then the Lift doors should be OPEN
+
+```
 
  This change may require users of
 version `v1.y.z` to modify their code to accommodate the new behavior, so it's a breaking change.
