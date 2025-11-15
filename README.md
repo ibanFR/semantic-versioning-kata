@@ -78,7 +78,7 @@ As a result, the customers have requested a change so that the doors remain open
 Feature: Open doors on lift initialization
   
   As a safety-conscious user
-  I want the lift doors to be open when the lift is created
+  I want the lift doors to be open when the lift is initialized
   So that I can ensure safe entry and exit from the lift
 
   Scenario: Lift Initialization
