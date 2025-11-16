@@ -1,8 +1,8 @@
 title: Semantic Versioning
-description: A starter template for a Jeykll site using the Just the Docs theme!
+description: Semantic Versioning Learning Hour
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://github.com/ibanFR/semantic-versioning-kata
 
 aux_links:
   Iván Fernández: https://ibanfr.github.io/
