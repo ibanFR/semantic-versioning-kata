@@ -5,6 +5,13 @@ nav_order: 1
 ---
 
 # Semantic Versioning Learning Hour
+{: .no_toc }
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 Learn how to apply Semantic Versioning (SemVer) to automate software releases by working through the [Lift Button](
 {% link _explanation/lift-button.md %})
