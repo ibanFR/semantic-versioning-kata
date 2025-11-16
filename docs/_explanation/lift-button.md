@@ -1,8 +1,8 @@
 ---
-title: Lift Button Kata
+title: Lift Button Requirements
 ---
 
-# Lift Button Kata
+# Lift Button
 
 Write the brains of a lift button.
 - When you press the button, the light comes on.
