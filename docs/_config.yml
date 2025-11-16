@@ -9,6 +9,8 @@ aux_links:
   GitHub: https://github.com/ibanFR/semantic-versioning-kata
 
 aux_links_new_tab: true
+back_to_top: true
+back_to_top_text: "Back to top"
 
 collections:
   explanation:
