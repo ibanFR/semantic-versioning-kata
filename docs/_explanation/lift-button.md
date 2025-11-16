@@ -13,4 +13,4 @@ Write the brains of a lift button.
 
 This is a state diagram:
 
-![State Diagram](/assets/images/explanation/lift_button_states_transitions.png)
+![State Diagram]({{ '/assets/images/explanation/lift_button_states_transitions.png' | relative_url }})
