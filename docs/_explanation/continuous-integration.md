@@ -2,7 +2,7 @@
 title: Continuous Integration
 ---
 
-# GitHub Actions CI/CD
+# Continuous Integration
 
 This project uses GitHub Actions for Continuous Integration and Continuous Deployment (CI/CD).
 
@@ -12,14 +12,18 @@ See [Using secrets in GitHub Actions].
 
 ## Release workflow
 
-The Release workflow is defined in the `.github/workflows/release.yml` file.
+The `.github/workflows/release.yml` workflow is configured to automate the release process for the project when changes
+are pushed to the `main` branch.
+
+It checks out the code, runs Maven tests, and then uses `semantic-release` to publish a new release
+to GitHub. 
+
+It uses appropriate permissions for contents, issues, pull requests, and OIDC for provenance.
 
 ## Pages workflow
 
-The GitHub Actions workflow is configured to automatically build and deploy the documentation site to GitHub Pages
-whenever changes are pushed to the `main` branch.
-
-The workflow is defined in the `.github/workflows/pages.yml` file.
+The `.github/workflows/pages.yml` workflow is configured to automatically build and deploy the site documentation to
+GitHub Pages whenever changes are pushed to the `main` branch.
 
 [Using secrets in GitHub Actions]: https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions
 
