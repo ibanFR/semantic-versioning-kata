@@ -1,4 +1,4 @@
-# just-the-docs-template
+# Semantic Versioning Documentation
 
 This is a *bare-minimum* template to create a [Jekyll] site that:
 
@@ -20,7 +20,7 @@ If you want to maintain your docs in the `docs` directory of an existing project
 
 After completing the creation of your new site on GitHub, update it as needed:
 
-## Replace the content of the template pages
+## index.md and README.md
 
 Update the following files to your own content:
 
@@ -52,26 +52,7 @@ To add an extra plugin, you need to add it in the `Gemfile` *and* in `_config.ym
 
 Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
 
-## Publishing your site on GitHub Pages
 
-1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
-
-    ```yaml
-    title: YOUR TITLE
-    description: YOUR DESCRIPTION
-    theme: just-the-docs
-
-    url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
-
-    aux_links: # remove if you don't want this link to appear on your pages
-      Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
-    ```
-
-2.  Push your updated `_config.yml` to your site on GitHub.
-
-3.  In your newly created repo on GitHub:
-    - go to the `Settings` tab -> `Pages` -> `Build and deployment`, then select `Source`: `GitHub Actions`.
-    - if there were any failed Actions, go to the `Actions` tab and click on `Re-run jobs`.
 
 ## Building and previewing your site locally
 
