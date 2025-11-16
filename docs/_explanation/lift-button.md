@@ -1,5 +1,6 @@
 ---
 title: Lift Button Requirements
+nav_order: 2
 ---
 
 # Lift Button
