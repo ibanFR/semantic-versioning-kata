@@ -24,8 +24,9 @@ workflow.
 
 * 5 min connect: How are version numbers assigned for your software?
 * 5 min concept: Semantic Versioning Specification
-* 5 min concept: Semantic Release
-* 40 min concrete: Release a Version for Lift Button
+* 10 min concept: Semantic Release
+* 20 min concrete: Release initial features for Lift Button
+* 15 min concrete: Release a BREAKING CHANGE for Lift Button
 * 5 min conclusions: What are the benefits of releasing on every commit?
 
 ## Connect: How are version numbers assigned for your software?
@@ -52,7 +53,7 @@ changes made in the codebase.
 
 Contributors follow a specific commit message convention to indicate the nature of their changes:
 
-```conventionalcommit
+```
 <type>: <description>
 <BLANK LINE>
 <optional body>
@@ -69,12 +70,25 @@ feat: add lights() method to Lift class to query the light status
 By using Semantic Release, teams can ensure consistent and reliable releases, reduce human error, and streamline the
 release process.
 
-## Concrete: Release a Version for Lift Button
+## Concrete: Release initial features for Lift Button
 
-Practice with the Lift Button Kata in your IDE:
+After reviewing the requirements for the [Lift Button]({% link _explanation/lift-button.md %}), the team has come up 
+with an initial Test list to implement the first features of the Lift Button:
+
+```java
+//TEST LIST
+//[] - doors should be CLOSED when Lift is created
+//[] - should switch lights ON when button is pressed and doors are CLOSED
+//[] - should OPEN the lift doors when lift arrives
+//[] - should switch OFF the lights when lift arrives
+//[] - lights should be OFF when button is pressed AND doors are OPEN
+```
+
+Your task is to help the team implement the initial Lift Button features and automate the release process using Semantic
+Release:
 
 1. Start by [forking] or [duplicating] the [semantic-versioning-kata] repository.
-2. Use formalized commit message convention to document changes in the codebase.
+2. Write one test at a time and document your changes using semantic commit messages:
 
     ```html
     | Type     | Description                          | 
@@ -84,7 +98,43 @@ Practice with the Lift Button Kata in your IDE:
     | refactor | A behavior preserving change         |
     ```
 
-3. New features and fixes are immediately available to the users after a commit is pushed to the main branch.
+3. New features and fixes are immediately available to the users after a commit is pushed to the main branch. View 
+   your [repository's releases and tags] to see the published versions based on your commit messages.
+
+## Concrete: Release a BREAKING CHANGE for Lift Button
+
+Following the release of version `v1.y.z`, customers raised a safety concern: the lift doors should not be closed when
+the lift is initialized!
+
+As a result, the customers have requested a change so that the doors remain open upon lift creation. Here is the new
+feature request:
+
+```gherkin
+Feature: Open doors on lift initialization
+  
+  As a safety-conscious user
+  I want the lift doors to be open when the lift is first started
+  So that I can ensure safe entry and exit from the lift
+
+  Scenario: The one where the Lift is first started
+    When the Lift is first started
+    Then the Lift doors should be OPEN
+```
+
+This change requires users of version `v1.y.z` to update their code for compatibility with the new lift behavior, so 
+the team will release this feature as a breaking change: 
+
+1. Update the code to implement the new requirement and release a new version of the Lift Button.
+2. Use the footer in your commit message to indicate that this change is not backwards compatible.
+
+    ```
+    <type>: <description>
+
+    BREAKING CHANGE: <breaking change summary>
+    <breaking change description + migration instructions>
+    ```
+3. After pushing your commit to the main branch, check your [repository's releases and tags] to see the new major 
+   version created for the breaking change.
 
 ## Conclusions: What are the benefits of releasing on every commit?
 
@@ -102,14 +152,4 @@ commit? What benefits does it bring to your development workflow and team collab
 
 [semantic-versioning-kata]: https://github.com/ibanFR/semantic-versioning-kata
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-
-[GitHub Pages]: https://docs.github.com/en/pages
-
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-
-[Jekyll]: https://jekyllrb.com
-
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+[repository's releases and tags]: https://docs.github.com/en/repositories/releasing-projects-on-github/viewing-your-repositorys-releases-and-tags
