@@ -45,7 +45,7 @@ increments to the version number:
 - `MINOR` version, increased for new features/functionality in a backwards compatible manner.
 - `PATCH` version, increased for backwards compatible bug fixes.
 
-## Concept: Semantic-Release
+## Concept: Semantic Release
 
 [Semantic Release] is a tool that automates the release process by analyzing commit messages to determine the type of
 changes made in the codebase.
