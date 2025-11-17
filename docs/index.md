@@ -67,7 +67,7 @@ release process.
 
 ## Concrete: Release initial features for Lift Button - 20 min
 
-After reviewing the requirements for the [Lift Button]({% link _explanation/lift-button.md %}), the team has come up 
+After reviewing the [Lift Button Requirements]({% link _explanation/lift-button.md %}), the team has come up 
 with an initial Test list to implement the first features of the Lift Button:
 
 ```java
