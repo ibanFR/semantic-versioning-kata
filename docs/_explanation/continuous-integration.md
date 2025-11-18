@@ -6,10 +6,6 @@ title: Continuous Integration
 
 This project uses GitHub Actions for Continuous Integration and Continuous Deployment (CI/CD).
 
-## GitHub Actions Configuration
-
-See [Using secrets in GitHub Actions].
-
 ## Release workflow
 
 The `.github/workflows/release.yml` workflow is configured to automate the release process for the project when changes
