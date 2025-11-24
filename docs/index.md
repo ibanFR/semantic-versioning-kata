@@ -1,10 +1,10 @@
 ---
-title: Semantic Versioning Learning Hour
+title: Semantic Release Learning Hour
 layout: home
 nav_order: 1
 ---
 
-# Semantic Versioning Learning Hour
+# Semantic Release Learning Hour
 {: .no_toc }
 
 Learn how to apply Semantic Versioning to automate software releases by working through the [Lift Button](
