@@ -9,7 +9,6 @@ This code kata will help you understand versioning principles and integrate them
 
 You can start by [creating a new repository from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template).
 
-
 ## Commit message format
 
 Follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format for commit messages to ensure proper versioning:
@@ -49,7 +48,7 @@ New features and fixes are immediately available to the users after a commit is 
 This repository uses [Semantic Release](https://semantic-release.gitbook.io/semantic-release) to analyze commit
 messages, automatically determine the next semantic version, and publish a new release.
 
-## Initial releases for Lift Button
+## Release initial features for Lift Button
 
 You have been provided with an initial TEST LIST for the Lift Button kata:
 
@@ -95,7 +94,9 @@ breaking change.
 Update the code to implement the new requirement and release a new version of the Lift Button.
 
 ### Commit message footer
+
 Use the commit footer to include information about breaking changes. For example:
+
 ```
 BREAKING CHANGE: <breaking change summary>
 <breaking change description + migration instructions>
