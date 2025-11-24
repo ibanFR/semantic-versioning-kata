@@ -23,12 +23,12 @@ workflow.
 
 
 
-## Connect: How are version numbers assigned for your software? - 5 min
+## Connect: How are version numbers assigned for your software? (⏱️ 5 min)
 
 Discuss with the group how version numbers are currently assigned in your projects. Are they done manually or
 automatically? What challenges have you faced with versioning?
 
-## Concept: Semantic Versioning Specification - 5 min
+## Concept: Semantic Versioning Specification (⏱️ 5 min)
 
 [Semantic Versioning] (SemVer) is a versioning scheme that consist in Simple set of rules and requirements that
 dictate how version numbers are assigned and incremented for software releases.
@@ -40,7 +40,7 @@ increments to the version number:
 - `MINOR` version, increased for new features/functionality in a backwards compatible manner.
 - `PATCH` version, increased for backwards compatible bug fixes.
 
-## Concept: Semantic Release - 10 min
+## Concept: Semantic Release (⏱️ 10 min)
 
 [Semantic Release] is a tool that automates the release process by analyzing commit messages to determine the type of
 changes made in the codebase.
@@ -65,7 +65,7 @@ feat: add lights() method to Lift class to query the light status
 By using Semantic Release, teams can ensure consistent and reliable releases, reduce human error, and streamline the
 release process.
 
-## Concrete: Release initial features for Lift Button - 20 min
+## Concrete: Release initial features for Lift Button (⏱️ 20 min)
 
 After reviewing the [Lift Button Requirements]({% link _explanation/lift-button.md %}), the team has come up 
 with an initial Test list to implement the first features of the Lift Button:
@@ -96,7 +96,7 @@ Release:
 3. New features and fixes are immediately available to the users after a commit is pushed to the main branch. View 
    your [repository's releases and tags] to see the published versions based on your commit messages.
 
-## Concrete: Release a BREAKING CHANGE for Lift Button - 15 min
+## Concrete: Release a BREAKING CHANGE for Lift Button (⏱️ 15 min)
 
 Following the release of version `v1.y.z`, customers raised a safety concern: the lift doors should not be closed when
 the lift is initialized!
@@ -131,7 +131,7 @@ the team will release this feature as a breaking change:
 3. After pushing your commit to the main branch, check your [repository's releases and tags] to see the new major 
    version created for the breaking change.
 
-## Conclusions: What are the benefits of releasing on every commit? - 5 min
+## Conclusions: What are the benefits of releasing on every commit? (⏱️ 5 min)
 
 Discuss the advantages of automating releases with Semantic Release. Is it really a good idea to release on every
 commit? What benefits does it bring to your development workflow and team collaboration?
