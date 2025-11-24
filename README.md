@@ -1,4 +1,4 @@
-# Semantic Versioning Kata
+# Semantic Release Kata
 
 Learn how to apply [Semantic Versioning (SemVer)](https://semver.org/) to automate software releases by working through
 the Lift Button Kata.
@@ -43,7 +43,7 @@ Use one of the following types to categorize your changes:
 
 New features and fixes are immediately available to the users after a commit is pushed to the main branch.
 
-This repository uses [Semantic Release](https://semantic-release.gitbook.io/semantic-release) to analyze commit 
+This repository uses [Semantic Release](https://semantic-release.gitbook.io/semantic-release) to analyze commit
 messages, automatically determine the next semantic version, and publish a new release.
 
 ## Initial releases for Lift Button
@@ -75,20 +75,20 @@ lift is initialized!
 As a result, the customers have requested a change so that the doors remain open upon lift creation. Here is the new feature request:
 
 ```gherkin
-Feature: Open doors on lift initialization
+Feature: Open doors when lift is first started
   
   As a safety-conscious user
-  I want the lift doors to be open when the lift is initialized
+  I want the lift doors to be open when the lift is first started
   So that I can ensure safe entry and exit from the lift
 
-  Scenario: Lift Initialization
-    When the Lift is initialized
+  Scenario: The one where the lift is first started
+    When the Lift is first started
     Then the Lift doors should be OPEN
 
 ```
 
- This change may require users of
-version `v1.y.z` to modify their code to accommodate the new behavior, so it's a breaking change.
+This change may require users of version `v1.y.z` to modify their code to accommodate the new behavior, so it's a
+breaking change.
 
 Update the code to implement the new requirement and release a new version of the Lift Button.
 
