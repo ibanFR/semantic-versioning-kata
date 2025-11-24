@@ -6,7 +6,8 @@ the Lift Button Kata.
 This code kata will help you understand versioning principles and integrate them into your development workflow.
 
 ## Getting started
-You can start by [forking](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository) or [duplicating](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) this repository.
+
+You can start by [creating a new repository from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template).
 
 
 ## Commit message format
@@ -20,7 +21,9 @@ Follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/
 <BLANK LINE>
 <optional footer>
 ```
+
 For example:
+
 ```conventionalcommit
 feat: add lights() method to Lift class to query the light status
 ```
@@ -69,8 +72,7 @@ Refer to [Lift Button](src/test/java/com/ibanfr/liftbutton/readme.md) for detail
 ## Releasing a breaking change
 
 Following the release of version `v1.y.z`, customers raised a safety concern: the lift doors should not be closed when the 
-lift is initialized! 
-
+lift is first started!
 
 As a result, the customers have requested a change so that the doors remain open upon lift creation. Here is the new feature request:
 
