@@ -82,7 +82,7 @@ with an initial Test list to implement the first features of the Lift Button:
 Your task is to help the team implement the initial Lift Button features and automate the release process using Semantic
 Release:
 
-1. Start by [forking] or [duplicating] the [semantic-versioning-kata] repository.
+1. Start by [creating a new repository from this template].
 2. Write one test at a time and document your changes using semantic commit messages:
 
     ```html
@@ -141,10 +141,6 @@ commit? What benefits does it bring to your development workflow and team collab
 
 [Semantic Release]: https://semantic-release.gitbook.io/semantic-release
 
-[forking]: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository
-
-[duplicating]: https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository
-
-[semantic-versioning-kata]: https://github.com/ibanFR/semantic-versioning-kata
+[creating a new repository from this template]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template
 
 [repository's releases and tags]: https://docs.github.com/en/repositories/releasing-projects-on-github/viewing-your-repositorys-releases-and-tags
