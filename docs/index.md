@@ -105,7 +105,7 @@ As a result, the customers have requested a change so that the doors remain open
 feature request:
 
 ```gherkin
-Feature: Open doors on lift initialization
+Feature: Open doors when lift is first started
   
   As a safety-conscious user
   I want the lift doors to be open when the lift is first started
