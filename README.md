@@ -66,7 +66,7 @@ commit messages.
 
 Check your [repository's releases and tags](https://docs.github.com/en/repositories/releasing-projects-on-github/viewing-your-repositorys-releases-and-tags) after every commit to the main branch.
 
-Refer to [Lift Button](src/test/java/com/ibanfr/liftbutton/readme.md) for detailed requirements.
+Refer to [Lift Button](java/src/test/java/com/ibanfr/liftbutton/readme.md) for detailed requirements.
 
 ## Releasing a breaking change
 
