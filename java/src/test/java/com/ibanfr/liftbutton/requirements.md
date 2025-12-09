@@ -11,4 +11,6 @@ This is a state diagram:
 
 ![State Diagram](docs/assets/images/explanation/lift_button_states_transitions.png)
 
+
+
  
