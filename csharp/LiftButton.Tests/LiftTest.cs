@@ -10,7 +10,7 @@ public class LiftTests
     //[] - lights should be OFF when button is pressed and doors are OPEN
 
     [Test]
-    public void Test1()
+    public void DoorsShouldBeClosedWhenLiftIsCreated()
     {
         Assert.Pass();
     }
