@@ -41,7 +41,21 @@ jobs:
       - name: Test
         run: dotnet test csharp/SemanticRelease.sln --no-build --verbosity normal
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+
+      - name: Install dependencies
+        working-directory: ./csharp
+        run: npm install @semantic-release/changelog @semantic-release/git @semantic-release/exec
+
+      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        working-directory: ./csharp
+        run: npm audit signatures
+
       - name: Release
+        working-directory: ./csharp
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
