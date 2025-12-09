@@ -5,9 +5,16 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "../updateVersion.sh '${nextRelease.version}' 'LiftButton/LiftButton.csproj'"
+      }
+    ],
+    [
       "@semantic-release/git",
       {
-        "assets": ["CHANGELOG.md", "LiftButton.csproj"]
+        "assets": ["csharp/LiftButton/LiftButton.csproj"],
+        "message": "build(release): release version ${nextRelease.version}"
       }
     ],
     "@semantic-release/github"
