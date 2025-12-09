@@ -23,10 +23,10 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore csharp/SemanticRelease.sln
 
       - name: Build
-        run: dotnet build --no-restore
+        run: dotnet build csharp/SemanticRelease.sln --no-restore
 
       - name: Test
-        run: dotnet test --no-build --verbosity normal
+        run: dotnet test csharp/SemanticRelease.sln --no-build --verbosity normal
