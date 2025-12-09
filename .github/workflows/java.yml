@@ -24,6 +24,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Run Tests
+        working-directory: ./java
         run: mvn test
       - name: Setup Node.js
         uses: actions/setup-node@v4
