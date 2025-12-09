@@ -1,5 +1,7 @@
 # Lift Button
-![State Diagram](docs/assets/images/explanation/lift_button_states_transitions.png)
+
+
+![State Diagram](../docs/assets/images/explanation/lift_button_states_transitions.png)
 
 This is a state diagram:
 
