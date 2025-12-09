@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main # or master
+    paths:
+      - "java/**"
 
 permissions:
   contents: read # for checkout
