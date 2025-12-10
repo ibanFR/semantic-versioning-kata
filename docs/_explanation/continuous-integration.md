@@ -6,15 +6,22 @@ title: Continuous Integration
 
 This project uses GitHub Actions for Continuous Integration and Continuous Deployment (CI/CD).
 
-## Release workflow
+## Java workflow
 
-The `.github/workflows/release.yml` workflow is configured to automate the release process for the project when changes
+The `.github/workflows/java.yml` workflow is configured to automate the release process for the project when changes
 are pushed to the `main` branch.
 
 It checks out the code, runs Maven tests, and then uses `semantic-release` to publish a new release
 to GitHub. 
 
 It uses appropriate permissions for contents, issues, pull requests, and OIDC for provenance.
+
+## .NET workflow
+
+The `.github/workflows/dotnet.yml` workflow automates build, test, release, and NuGet package publishing for the 
+`LiftButton` C# project.
+
+It is triggered by push and pull request events targeting the `main` branch, and runs only when files within the `csharp/` directory are modified.
 
 ## Pages workflow
 
