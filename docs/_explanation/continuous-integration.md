@@ -3,8 +3,18 @@ title: Continuous Integration
 ---
 
 # Continuous Integration
+{: .no_toc }
+
 
 This project uses GitHub Actions for Continuous Integration and Continuous Deployment (CI/CD).
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+
 
 ## Java workflow
 
