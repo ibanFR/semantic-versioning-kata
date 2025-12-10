@@ -33,11 +33,15 @@ The `.github/workflows/dotnet.yml` workflow automates build, test, release, and 
 
 It is triggered by push and pull request events targeting the `main` branch, and runs only when files within the `csharp/` directory are modified.
 
+For more details on building and testing .NET projects with GitHub Actions, see the
+[GitHub Actions Tutorial for Building and testing .NET projects].
+
 ## Pages workflow
 
 The `.github/workflows/pages.yml` workflow is configured to automatically build and deploy the site documentation to
 GitHub Pages whenever changes are pushed to the `main` branch.
 
 [Using secrets in GitHub Actions]: https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions
+[GitHub Actions Tutorial for Building and testing .NET projects]: https://docs.github.com/en/actions/tutorials/build-and-test-code/net
 
 
