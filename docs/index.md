@@ -141,11 +141,21 @@ the team will release this feature as a breaking change:
 
 ## Conclusions: What are the benefits of releasing on every commit? (⏱️ 5 min)
 
-Discuss the advantages of automating releases with Semantic Release. Is it really a good idea to release on every
-commit? What benefits does it bring to your development workflow and team collaboration?
+Now that you have experienced how semantic commit messages are used to release new features of the Lift Button, ask the
+group to think about:
+
+> _[When should you use] semantic commit messages?_
+
+Collect and summarize the ideas for everyone. Highlight the ones that better align with the learning goals:
+
+> _"Use semantic commit messages to automate software releases in a continuous delivery pipeline"_
+>
+> _"Semantic commit messages help communicate the nature of changes to the codebase"_
+
 
 [Describe your experience]: https://sammancoaching.org/activities/connect/your_experience.html
 [Three Facts]: https://sammancoaching.org/activities/connect/three_facts.html
+[When should you use]: https://sammancoaching.org/activities/conclusions/when_to_use_this.html
 
 [Semantic Versioning]: https://semver.org/
 
