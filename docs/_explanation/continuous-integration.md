@@ -23,18 +23,15 @@ build, test, and release the software across its Java and .NET implementations.
 
 ## Java workflow
 
-The `.github/workflows/java.yml` workflow is configured to automate the release process for the project when changes
-are pushed to the `main` branch.
+The `.github/workflows/java.yml` workflow automates build, test, and release for the Java implementation of the
+LiftButton software.
 
-It checks out the code, runs Maven tests, and then uses `semantic-release` to publish a new release
-to GitHub. 
-
-It uses appropriate permissions for contents, issues, pull requests, and OIDC for provenance.
+It checks out the code, runs Maven tests, and then uses `semantic-release` to publish a new release to GitHub.
 
 ## .NET workflow
 
-The `.github/workflows/dotnet.yml` workflow automates build, test, release, and NuGet package publishing for the 
-`LiftButton` C# project.
+The `.github/workflows/dotnet.yml` workflow automates build, test, release, and NuGet package publishing for the C#
+implementation of the LiftButton software.
 
 It is triggered by push and pull request events targeting the `main` branch, and runs only when files within the `csharp/` directory are modified.
 
