@@ -4,7 +4,7 @@ title: Commit Message Convention
 
 # Commit Message Convention
 
-The team follows a standardized commit message convention to ensure clarity and consistency in our versioning and
+The team follows a standardized **Commit Message Convention** to ensure clarity and consistency in our versioning and
 release process.
 {: .fs-6 .fw-300 }
 
@@ -19,6 +19,12 @@ Each commit message should adhere to the following format:
 | **docs**     | Documentation only changes                                                                |
 | **build**    | Changes that affect the build system or external dependencies (`pom.xml`, etc)            |
 | **ci**       | Changes to our CI configuration files and scripts (`release.yml`, `.releaserc.json`, etc) |
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Initial release
 
