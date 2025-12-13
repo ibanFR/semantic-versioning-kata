@@ -5,7 +5,8 @@ nav_order: 2
 
 # Semantic Release
 
-This repository uses [Semantic Release] to automate the release process of the LiftButton. 
+This repository uses [Semantic Release] to automate the release process of the LiftButton software.
+{: .fs-6 .fw-300 }
 
 Even though semantic-release is a Node CLI application, it can be used to manage releases for projects in any
 programming language.
