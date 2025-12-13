@@ -6,6 +6,7 @@ title: Commit Message Convention
 
 The team follows a standardized commit message convention to ensure clarity and consistency in our versioning and
 release process.
+{: .fs-6 .fw-300 }
 
 Each commit message should adhere to the following format:
 
