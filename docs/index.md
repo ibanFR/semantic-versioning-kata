@@ -29,8 +29,12 @@ workflow.
 
 ## Connect: How are version numbers assigned for your software? (⏱️ 5 min)
 
-Discuss with the group how version numbers are currently assigned in your projects. Are they done manually or
-automatically? What challenges have you faced with versioning?
+Discuss with the group how version numbers are currently assigned in their current projects (you may use 
+[Describe your experience] or [Three Facts] depending on the team size).
+
+Write notes of what they say on a whiteboard or shared document where everyone can see them.
+
+Review the notes and highlight those that relate to the concepts covered in the upcoming sections.
 
 ## Concept: Semantic Versioning Specification (⏱️ 5 min)
 
@@ -140,6 +144,8 @@ the team will release this feature as a breaking change:
 Discuss the advantages of automating releases with Semantic Release. Is it really a good idea to release on every
 commit? What benefits does it bring to your development workflow and team collaboration?
 
+[Describe your experience]: https://sammancoaching.org/activities/connect/your_experience.html
+[Three Facts]: https://sammancoaching.org/activities/connect/three_facts.html
 
 [Semantic Versioning]: https://semver.org/
 
