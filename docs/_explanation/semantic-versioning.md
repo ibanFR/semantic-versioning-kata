@@ -18,7 +18,15 @@ dictate how version numbers are assigned and incremented for software releases.
 1. TOC
 {:toc}
 
-## Versioning Scheme
+## Declaring the public API
+
+In this repository, the public API is declared through the public classes and methods exposed in the Java and C# implementations
+of the LiftButton software.
+
+Changes to these public interfaces are carefully managed to ensure that version increments
+adhere to the SemVer guidelines.
+
+## Semantic Versioning Scheme
 
 SemVer uses a three-part version number - `MAJOR.MINOR.PATCH` - to communicate changes to the software with specific
 increments to the version number:
