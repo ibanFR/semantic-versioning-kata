@@ -6,8 +6,9 @@ nav_order: 3
 # Continuous Integration
 {: .no_toc }
 
-
-This project uses GitHub Actions for Continuous Integration and Continuous Deployment (CI/CD).
+This repository leverages GitHub Actions to automate Continuous Integration and Continuous Deployment (CI/CD) workflows
+for the Lift Button software.
+{: .fs-6 .fw-300 }
 
 ## Table of Contents
 {: .no_toc .text-delta }
