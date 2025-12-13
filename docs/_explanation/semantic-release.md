@@ -21,29 +21,7 @@ folder of the repository.
 
 For more information on how to customize the configuration, refer to [semantic-release usage configuration].
 
-## Initial release
 
-Start by making your first commit with the code for the first feature . For example:
-
-```
-feat: first feature for your software
-```
-
-## Releasing a bug fix
-
-When you want to release a bug fix, simply make a commit to `main` with the message:
-
-```
-fix: correct typo in user interface
-```
-
-## Releasing a feature
-
-When you want to release a new feature, simply make a commit to `main` with the message:
-
-```
-feat: add new user authentication module
-```
 
 [Semantic Release]: https://semantic-release.gitbook.io/semantic-release/
 [Can I use semantic-release to publish non-JavaScript packages?]: https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-use-semantic-release-to-publish-non-javascript-packages
