@@ -7,7 +7,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "../updateVersion.sh '${nextRelease.version}' 'LiftButton/LiftButton.csproj'"
+        "prepareCmd": "./updateVersion.sh '${nextRelease.version}' 'LiftButton/LiftButton.csproj'"
       }
     ],
     [
