@@ -4,6 +4,7 @@ nav_order: 2
 ---
 
 # Semantic Release
+{: .no_toc }
 
 This repository uses [Semantic Release] to automate the release process of the LiftButton software.
 {: .fs-6 .fw-300 }
@@ -12,6 +13,12 @@ Even though semantic-release is a Node CLI application, it can be used to manage
 programming language.
 
 See [Can I use semantic-release to publish non-JavaScript packages?] in the semantic-release documentation for more details.
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Configuration
 
