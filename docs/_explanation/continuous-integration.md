@@ -6,8 +6,7 @@ nav_order: 3
 # Continuous Integration
 {: .no_toc }
 
-This repository leverages GitHub Actions to automate Continuous Integration and Continuous Deployment (CI/CD) workflows
-for the Lift Button software.
+This repository leverages [GitHub Actions] to automate CI/CD workflows for the Lift Button software.
 {: .fs-6 .fw-300 }
 
 With each push to the `main` branch, the workflows defined in the `.github/workflows/` directory are triggered to
@@ -50,7 +49,7 @@ To publish your software documentation to GitHub Pages, configure your repositor
 After the configuration is complete, the `.github/workflows/pages.yml` workflow will automatically build and deploy the
 documentation site to GitHub Pages whenever changes under the `docs/` directory are pushed to the `main` branch.
 
-
+[GitHub Actions]: https://docs.github.com/en/actions
 [Using secrets in GitHub Actions]: https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions
 [GitHub Actions Tutorial for Building and testing .NET projects]: https://docs.github.com/en/actions/tutorials/build-and-test-code/net
 [Publishing with a custom GitHub Actions workflow]: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow
