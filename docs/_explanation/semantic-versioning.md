@@ -4,12 +4,19 @@ nav_order: 1
 ---
 
 # Semantic Versioning
+{: .no_toc }
 
 This repository uses [Semantic Versioning] to manage the versioning of the LiftButton software.
 {: .fs-6 .fw-300 }
 
 [Semantic Versioning] (SemVer) is a versioning scheme that consist in a simple set of rules and requirements that
 dictate how version numbers are assigned and incremented for software releases.
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Versioning Scheme
 
