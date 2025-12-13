@@ -10,6 +10,10 @@ This repository leverages GitHub Actions to automate Continuous Integration and 
 for the Lift Button software.
 {: .fs-6 .fw-300 }
 
+With each push to the `main` branch, the workflows defined in the `.github/workflows/` directory are triggered to
+build, test, and release the software across its Java and .NET implementations.
+
+
 ## Table of Contents
 {: .no_toc .text-delta }
 
