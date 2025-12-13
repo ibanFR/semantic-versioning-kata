@@ -8,7 +8,7 @@ nav_order: 1
 {: .no_toc }
 
 Learn how to apply Semantic Versioning to automate software releases by working through the [Lift Button](
-{% link _explanation/lift-button.md %}) Kata.
+{% link _reference/lift-button.md %}) Kata.
 {: .fs-6 .fw-300 }
 
 
@@ -67,7 +67,7 @@ release process.
 
 ## Concrete: Release initial features for Lift Button (⏱️ 20 min)
 
-After reviewing the [Lift Button Requirements]({% link _explanation/lift-button.md %}), the team has come up 
+After reviewing the [Lift Button Requirements]({% link _reference/lift-button.md %}), the team has come up 
 with an initial Test list to implement the first features of the Lift Button:
 
 ```java

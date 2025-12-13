@@ -48,7 +48,6 @@ fix: correct typo in user interface
 If your change introduces a breaking change, make a commit to `main` with the appropriate type and include a
 `BREAKING CHANGE:` section in the commit message body or footer. For example:
 
-
 ```
 feat: lift doors are open on lift creation
 
