@@ -10,15 +10,15 @@ release process.
 
 Each commit message should adhere to the following format:
 
-| Type         | Description                                                                               |
-|--------------|-------------------------------------------------------------------------------------------|
-| **feat**     | A new feature                                                                             |
-| **fix**      | A bug fix                                                                                 |
-| **refactor** | A behavior preserving change (neither fixes a bug nor adds a feature)                     |
-| **test**     | Adding new tests or refactoring existing ones                                             |
-| **docs**     | Documentation only changes                                                                |
-| **build**    | Changes that affect the build system or external dependencies (`pom.xml`, etc)            |
-| **ci**       | Changes to our CI configuration files and scripts (`release.yml`, `.releaserc.json`, etc) |
+| Type         | Description                                                                                                |
+|--------------|------------------------------------------------------------------------------------------------------------|
+| **feat**     | A new feature                                                                                              |
+| **fix**      | A bug fix                                                                                                  |
+| **refactor** | A behavior preserving change (neither fixes a bug nor adds a feature)                                      |
+| **test**     | Adding new tests or refactoring existing ones                                                              |
+| **docs**     | Documentation only changes                                                                                 |
+| **build**    | Changes that affect the build system or external dependencies (`pom.xml`,`.sln`,`.csproj` etc)             |
+| **ci**       | Changes to our CI configuration files and scripts (`java.yml`, `updateVersion.sh`, `.releaserc.json`, etc) |
 
 ## Table of Contents
 {: .no_toc .text-delta }
