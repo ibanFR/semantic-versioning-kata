@@ -1,5 +1,6 @@
 ---
 title: Semantic Release
+nav_order: 2
 ---
 
 # Semantic Release

@@ -1,5 +1,6 @@
 ---
 title: Continuous Integration
+nav_order: 3
 ---
 
 # Continuous Integration
