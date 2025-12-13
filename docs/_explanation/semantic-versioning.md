@@ -35,7 +35,15 @@ increments to the version number:
 - `MINOR` version, incremented for new features/functionality in a backwards compatible manner.
 - `PATCH` version, incremented for backwards compatible bug fixes.
 
-## Versioning in Java
+## Language-specific Versioning
+
+Each implementation of the LiftButton defines its version in the artifact metadata, following the conventions of its
+respective ecosystem.
+
+See [Understand versioning of artifacts] Unit in [Implement a versioning strategy] Microsoft Training Module for more
+details on common conventions for other ecosystems.
+
+### Versioning in Java
 
 In the Java implementation of LiftButton, the version number is specified in the `pom.xml` file located in the `java/` 
 directory: 
@@ -54,7 +62,7 @@ directory:
 The `<version>0.0.1-SNAPSHOT</version>` follows the SemVer format and is updated automatically during the release process using GitHub
 Actions.
 
-## Versioning in C#
+### Versioning in C#
 
 In the C# implementation of LiftButton, the version number is specified in the `LiftButton.csproj` file located in the
 `csharp/` directory:
@@ -77,3 +85,5 @@ Similar to the Java implementation, the `<Version>1.0.0</Version>` follows the S
 the release process using GitHub Actions.
 
 [Semantic Versioning]: https://semver.org/
+[Understand versioning of artifacts]: https://learn.microsoft.com/en-us/training/modules/implement-versioning-strategy/2-understand-versioning-of-artifacts
+[Implement a versioning strategy]: https://learn.microsoft.com/en-us/training/modules/implement-versioning-strategy/
