@@ -1,11 +1,11 @@
 ---
-title: Release a version of the Lift Button software
+title: Release a new version
 nav_order: 1
 ---
 
-# Release a version of the Lift Button software
+# Release a new version of the Lift Button
 
-How-to use semantic commit messages to automatically release a new version of the Lift Button software.
+How-to release a new version of the Lift Button software.
 {: .fs-6 .fw-300 }
 
 Use semantic commit messages to document the nature of the changes you make to the codebase.
