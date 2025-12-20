@@ -40,8 +40,7 @@ increments to the version number:
 Each implementation of the LiftButton defines its version in the artifact metadata, following the conventions of its
 respective ecosystem.
 
-See [Understand versioning of artifacts] Unit in [Implement a versioning strategy] Microsoft Training Module for more
-details on common conventions for other ecosystems.
+For learning more about versioning strategies, see [Implement a versioning strategy] Microsoft Training Module.
 
 
 [Semantic Versioning]: https://semver.org/
