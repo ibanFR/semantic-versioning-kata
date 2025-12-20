@@ -14,7 +14,7 @@ You can start by [creating a new repository from this template](https://docs.git
 Follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format for commit messages to ensure proper versioning:
 
 ```conventionalcommit
-<type>: <subject>
+<type>: <summary>
 <BLANK LINE>
 <optional body>
 <BLANK LINE>
