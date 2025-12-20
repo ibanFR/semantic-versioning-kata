@@ -41,7 +41,7 @@ The commit message header must conform to the following format:
 ```
 
 
-## Commit Message Type
+### Type
 
 Must be one of the following types:
 
@@ -55,3 +55,28 @@ Must be one of the following types:
 | **build**    | Changes that affect the build system or external dependencies (`pom.xml`,`.sln`,`.csproj` etc)             |
 | **ci**       | Changes to our CI configuration files and scripts (`java.yml`, `updateVersion.sh`, `.releaserc.json`, etc) |
 
+### Summary
+
+Use the summary to provide a succinct description of the change:
+
+- use the imperative, present tense: "change" not "changed" nor "changes"
+- don't capitalize the first letter
+- no dot (.) at the end
+
+## Commit Message Body
+
+Explain the motivation for the change in the commit message body:
+
+```
+This commit message should explain _why_ you are making the change.
+```
+
+## Commit Message Footer
+
+Include information about breaking changes in the commit message footer:
+
+```
+BREAKING CHANGE: <breaking change summary>
+<BLANK LINE>
+<breaking change description + migration instructions>
+```
