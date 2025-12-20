@@ -23,9 +23,7 @@ documentation.
 ### Version number in C# projects
 
 In the C# implementation of LiftButton, the version number is specified in the `LiftButton.csproj` file located in the
-`csharp/` directory.
-
-The format used is defined by .NET project files:
+`csharp/` directory:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -47,4 +45,9 @@ process using GitHub Actions.
 Common pre-release labels such as `-alpha`, `-beta`, or `-rc` can be used to indicate pre-release versions before the
 stable release.
 
+For more details about .NET project files, see [Project files] in the .NET documentation.
+For guidance on versioning C# projects, see [Versioning in C#] in the C# documentation.
+
 [How .NET is versioned]: https://learn.microsoft.com/en-us/dotnet/core/versions/
+[MSBuild project file schema]: https://learn.microsoft.com/en-us/dotnet/core/project-sdk/overview#project-files
+[Versioning in C#]: https://learn.microsoft.com/en-us/dotnet/csharp/versioning
