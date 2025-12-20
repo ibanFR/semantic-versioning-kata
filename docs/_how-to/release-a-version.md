@@ -4,12 +4,18 @@ nav_order: 1
 ---
 
 # Release a new version of the Lift Button
+{: .no_toc }
 
 How-to release a new version of the Lift Button software.
 {: .fs-6 .fw-300 }
 
 Use semantic commit messages to document the nature of the changes you make to the codebase.
 
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Initial release
 
