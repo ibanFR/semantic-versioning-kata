@@ -5,6 +5,9 @@ nav_order: 1
 
 # Lift Button
 
+The Lift Button software requirement specification.
+{: .fs-6 .fw-300 }
+
 Write the brains of a lift button.
 - When you press the button, the light comes on.
 - When the lift arrives and the doors
