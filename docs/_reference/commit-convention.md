@@ -3,10 +3,21 @@ title: Commit Message Convention
 ---
 
 # Commit Message Convention
+{: .no_toc }
+
+This repository uses a standardized Commit Message Convention to communicate changes to the LiftButton software.
+{: .fs-6 .fw-300 }
 
 The team follows a standardized **Commit Message Convention** to ensure clarity and consistency in our versioning and
 release process.
-{: .fs-6 .fw-300 }
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+## Commit Message Format
 
 Each commit message should adhere to the following format:
 
@@ -20,11 +31,6 @@ Each commit message should adhere to the following format:
 | **build**    | Changes that affect the build system or external dependencies (`pom.xml`,`.sln`,`.csproj` etc)             |
 | **ci**       | Changes to our CI configuration files and scripts (`java.yml`, `updateVersion.sh`, `.releaserc.json`, etc) |
 
-## Table of Contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
 
 ## Initial release
 
