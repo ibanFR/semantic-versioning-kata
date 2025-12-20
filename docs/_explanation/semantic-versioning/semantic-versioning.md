@@ -43,46 +43,6 @@ respective ecosystem.
 See [Understand versioning of artifacts] Unit in [Implement a versioning strategy] Microsoft Training Module for more
 details on common conventions for other ecosystems.
 
-### Versioning in Java
-
-In the Java implementation of LiftButton, the version number is specified in the `pom.xml` file located in the `java/` 
-directory: 
-
-```xml
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.ibanfr</groupId>
-    <artifactId>semantic-release-kata</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
-```
-
-The `<version>0.0.1-SNAPSHOT</version>` follows the SemVer format and is updated automatically during the release process using GitHub
-Actions.
-
-### Versioning in C#
-
-In the C# implementation of LiftButton, the version number is specified in the `LiftButton.csproj` file located in the
-`csharp/` directory:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <TargetFramework>net10.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-        <PackageId>IbanFR.SemanticRelease.LiftButton</PackageId>
-        <Version>1.0.0</Version>
-    </PropertyGroup>
-
-</Project>
-```
-
-Similar to the Java implementation, the `<Version>1.0.0</Version>` follows the SemVer format and is updated automatically during
-the release process using GitHub Actions.
 
 [Semantic Versioning]: https://semver.org/
 [Understand versioning of artifacts]: https://learn.microsoft.com/en-us/training/modules/implement-versioning-strategy/2-understand-versioning-of-artifacts
