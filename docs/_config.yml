@@ -30,6 +30,11 @@ just_the_docs:
     how-to:
       name: How-To
 
+callouts:
+  warning:
+    title: Warning
+    color: red
+
 defaults:
   # All regular Jekyll pages
   - scope:
