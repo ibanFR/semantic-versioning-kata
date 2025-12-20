@@ -36,7 +36,12 @@ implementation of the LiftButton software.
 It is triggered by push and pull request events targeting the `main` branch, and runs only when files within the `csharp/` directory are modified.
 
 For more details on building and testing .NET projects with GitHub Actions, see the
-[GitHub Actions Tutorial for Building and testing .NET projects].
+[Building and testing .NET projects] GitHub Actions Tutorial.
+
+## Python workflow
+
+For more details on building and testing Python projects with GitHub Actions, see the
+[Building and testing Python] GitHub Actions Tutorial. 
 
 ## Pages workflow
 
@@ -48,7 +53,8 @@ documentation site to GitHub Pages whenever changes under the `docs/` directory 
 
 [GitHub Actions]: https://docs.github.com/en/actions
 [Using secrets in GitHub Actions]: https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions
-[GitHub Actions Tutorial for Building and testing .NET projects]: https://docs.github.com/en/actions/tutorials/build-and-test-code/net
+[Building and testing .NET projects]: https://docs.github.com/en/actions/tutorials/build-and-test-code/net
+[Building and testing Python]: https://docs.github.com/en/actions/tutorials/build-and-test-code/python
 [Publishing with a custom GitHub Actions workflow]: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow
 
 
