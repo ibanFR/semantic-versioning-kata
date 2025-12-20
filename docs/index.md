@@ -57,7 +57,7 @@ Contributors follow a specific [Commit Message Convention]({% link _reference/co
 the nature of their changes:
 
 ```
-<type>: <description>
+<type>: <summary>
 <BLANK LINE>
 <optional body>
 <BLANK LINE>
@@ -131,7 +131,7 @@ the team will release this feature as a breaking change:
 2. Use the footer in your commit message to indicate that this change is not backwards compatible.
 
     ```
-    <type>: <description>
+    <type>: <summary>
 
     BREAKING CHANGE: <breaking change summary>
     <breaking change description + migration instructions>
