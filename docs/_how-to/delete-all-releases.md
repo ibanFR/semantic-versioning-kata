@@ -1,9 +1,11 @@
 ---
-title: Delete all releases from a GitHub repository
+title: Roll back a released version
 nav_order: 2
 ---
 
-# How-to delete all releases from a GitHub repository
+# Rollback a released version of the Lift Button
+How-to roll back a released version of the Lift Button software.
+{: .fs-6 .fw-300 }
 
 To reset the history of a GitHub repository and delete all releases, you can follow the steps below:
 
