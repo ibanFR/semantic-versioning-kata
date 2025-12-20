@@ -13,7 +13,7 @@ Use semantic commit messages to document the nature of the changes you make to t
 
 ## Initial release
 
-Start by making your first commit with the code for the first feature . For example:
+Start by making your first commit to `main` with the code for the first feature . For example:
 
 ```
 feat: first feature for your software
