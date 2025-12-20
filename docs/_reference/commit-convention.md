@@ -21,6 +21,30 @@ release process.
 
 Each commit message should adhere to the following format:
 
+```
+<header>
+<BLANK LINE>
+<optional body>
+<BLANK LINE>
+<optional footer>
+```
+## Commit Message Header
+
+The commit message header must conform to the following format:
+
+```
+<type>: <summary>
+  │         │
+  │         └─⫸ Summary in present tense. Not capitalized. No period at the end.
+  │       
+  └─⫸ Commit Type: build|ci|docs|feat|fix|refactor|test
+```
+
+
+## Commit Message Type
+
+Must be one of the following types:
+
 | Type         | Description                                                                                                |
 |--------------|------------------------------------------------------------------------------------------------------------|
 | **feat**     | A new feature                                                                                              |
