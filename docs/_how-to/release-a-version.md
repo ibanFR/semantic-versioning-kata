@@ -1,0 +1,46 @@
+---
+title: Release a Version of the Lift Button
+nav_order: 1
+---
+
+# How-to release a version of the Lift Button
+
+Use semantic commit messages to automatically release a new version of the Lift Button.
+{: .fs-6 .fw-300 }
+
+## Initial release
+
+Start by making your first commit with the code for the first feature . For example:
+
+```
+feat: first feature for your software
+```
+
+## Releasing a new feature
+
+When you want to release a new feature, simply make a commit to `main` with the message:
+
+```
+feat: add new user authentication module
+```
+
+## Releasing a bug fix
+
+When you want to release a bug fix, simply make a commit to `main` with the message:
+
+```
+fix: correct typo in user interface
+```
+
+## Releasing a BREAKING CHANGE
+
+If your change introduces a breaking change, make a commit to `main` with the appropriate type and include a
+`BREAKING CHANGE:` section in the commit message body or footer. For example:
+
+```
+feat: lift doors are open on lift creation
+
+BREAKING CHANGE: Lift doors now remain open when the lift is initialized.
+Users must update their code to accommodate this new behavior.
+A new method 'closeDoors()' has been added to manually close the doors after lift creation.
+```

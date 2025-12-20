@@ -1,5 +1,6 @@
 ---
 title: Delete all releases from a GitHub repository
+nav_order: 2
 ---
 
 # How-to delete all releases from a GitHub repository

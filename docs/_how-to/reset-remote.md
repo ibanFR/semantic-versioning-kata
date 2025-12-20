@@ -1,5 +1,6 @@
 ---
 title: Reset remote branch to a previous commit
+nav_order: 3
 ---
 
 # How-to reset remote branch to a previous commit
