@@ -45,8 +45,16 @@ increments to the version number:
 > _Major version zero (0.y.z) is for initial development. Anything MAY change at any time. The public API SHOULD NOT be
 > considered stable._
 
-The LiftButton software is currently in its initial development phase, and as such, it is in version `0.y.z`. During
+The LiftButton software is currently in its initial development phase, and as such, it is in version `0.0.1`. During
 this phase, the public API is subject to change without notice, and users should not rely on its stability.
+
+```java
+package com.ibanfr.liftbutton;
+
+// Version 0.0.1 - Initial development
+public class Lift {
+}
+```
 
 ## Version 1.0.0 defines the public API
 
@@ -54,6 +62,19 @@ this phase, the public API is subject to change without notice, and users should
 > changes._
 
 The public API of the Lift Button software will be formally established with the release of its first stable feature.
+
+```java
+package com.ibanfr.liftbutton;
+
+public class Lift {
+    
+    // Version 1.0.0 - Public API established
+    public String doorStatus(){
+        return "Closed"; // first feature released: Doors should be closed when the lift is created
+    }
+}
+```
+
 This initial release will serve as the baseline for future versioning decisions.
 
 Future changes to the public API will be communicated through version increments according to the SemVer guidelines.
@@ -100,7 +121,7 @@ public class Lift {
     
     public String doors;
     
-    // Version 1.0.0
+    // Version 1.0.1
     public Lift(){
         this.doors = "Closed";
     }
