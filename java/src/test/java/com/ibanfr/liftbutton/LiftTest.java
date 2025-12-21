@@ -1,6 +1,6 @@
 package com.ibanfr.liftbutton;
 
-import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -15,14 +15,11 @@ class LiftTest {
     //[] - lights should be OFF when button is pressed and doors are OPEN
 
     @Test
-    void doorsShouldBeClosedOnLiftCreation() {
+    @DisplayName("should create a new Lift")
+    void should_create_a_new_Lift() {
 
-        //given
-
-        //when
-
-        //then
-        assertThat(true).isTrue();
-
+        assertThat(new Lift())
+                .as("Lift should be created")
+                .isNotNull();
     }
 }
