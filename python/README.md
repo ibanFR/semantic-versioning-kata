@@ -26,4 +26,4 @@ To run the tests, use the following command:
 python -m pytest
 ```
 
-[Creation of virtual environments]: https://docs.python.org/3/library/venv.html#module-venv
+[Creation of virtual environments]: https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-a-new-virtual-environment
