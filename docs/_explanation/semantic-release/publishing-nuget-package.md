@@ -1,7 +1,7 @@
 ---
 title: Publishing a NuGet package
 parent: Semantic Release
-nav_order: 1
+nav_order: 2
 ---
 
 # Publishing a NuGet Package
