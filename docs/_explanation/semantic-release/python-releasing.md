@@ -61,6 +61,17 @@ process without worrying about affecting the real index.
 To register an account, go to https://test.pypi.org/account/register/ and complete the steps on that page. You will 
 also need to verify your email address before you're able to upload any packages.
 
+## Configure Trusted Publishing
+
+This guide relies on PyPI’s [Trusted Publishing] implementation to connect to GitHub Actions. To add a new trusted 
+publisher follow these steps:
+
+1. Go to https://test.pypi.org/manage/account/publishing/.
+2. Fill in the name you wish to publish your new PyPI project under (the `name` value in your `pyproject.toml`), the
+   GitHub repository owner's name, the repository name, and the filename of the release publishing workflow (`python.
+   yml`). 
+3. Register the trusted publisher.
+
 ## Build artifacts
 
 See:
@@ -85,4 +96,5 @@ See:
 [Distribution Packages]: https://packaging.python.org/en/latest/glossary/#term-Distribution-Package
 [PyPI]: https://pypi.org/
 [Writing your pyproject.toml]: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#writing-pyproject-toml
+[Trusted Publishing]: https://docs.pypi.org/trusted-publishers/
 [Automatic Versioning and Release — Python Package]: https://python.plainenglish.io/automatic-versioning-and-release-python-package-ba15dfb8adf0
