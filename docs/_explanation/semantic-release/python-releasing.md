@@ -72,29 +72,32 @@ publisher follow these steps:
    yml`). 
 3. Register the trusted publisher.
 
-## Build artifacts
+## Update the python workflow for publishing to TestPyPI
 
-See:
+In your GitHub repository, open the `.github/workflows/python.yml` file and update the environment url with your 
+package name:
 
-- https://packaging.python.org/en/latest/flow/#the-packaging-flow
-- https://packaging.python.org/en/latest/tutorials/installing-packages/
+```yaml
+  publish-to-testpypi:
+    name: Publish Python 🐍 distribution 📦 to TestPyPI
+    needs:
+      - build-distribution-packages
+    runs-on: ubuntu-latest
 
-See the documentation on [Building and Distributing Packages] in the Python Packaging User Guide for details on how to
-build source and binary distributions of your package.
+    environment:
+      name: testpypi
+      url: https://test.pypi.org/p/lift_button_ibanfr # update with your package name
+```
+
+For more details on how to configure the GitHub Actions workflow for publishing to TestPyPI, refer to
+[Publishing Package Distribution Releases using GitHub Actions CI/CD workflows] in the [Python Packaging User Guide].
 
 
-## Upload to the package distribution service (PyPI)
 
-See:
-
-- https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/
-
-## Other sources and inspiration
-
- - [Automatic Versioning and Release — Python Package]
 
 [Distribution Packages]: https://packaging.python.org/en/latest/glossary/#term-Distribution-Package
 [PyPI]: https://pypi.org/
 [Writing your pyproject.toml]: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#writing-pyproject-toml
 [Trusted Publishing]: https://docs.pypi.org/trusted-publishers/
-[Automatic Versioning and Release — Python Package]: https://python.plainenglish.io/automatic-versioning-and-release-python-package-ba15dfb8adf0
+[Python Packaging User Guide]: https://packaging.python.org/en/latest/
+[Publishing Package Distribution Releases using GitHub Actions CI/CD workflows]: https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/#
