@@ -24,7 +24,31 @@ ecosystem, where they are made available to the wider developer community.
 
 ## The configuration file
 
-The standard practice is to use a `pyproject.toml` file to define the package metadata, dependencies, and build settings.
+The standard practice is to use a `pyproject.toml` file to define the package metadata, dependencies, and build
+settings.
+
+Change the `name` to include your username; this ensures that you have a unique package name that doesn’t conflict with
+packages uploaded by other people following this learning hour.
+
+```toml
+[project]
+name = "lift_button_ibanfr"
+```
+Change `authors` to include your name and email address.
+
+```toml
+authors = [
+    { name="Iván Fernández", email="ibanFR@users.noreply.github.com" },
+
+]
+```
+
+Change the `[project.urls]` to include links to your repository.
+
+```toml
+Homepage = "https://github.com/ibanFR/semantic-release-python"
+Issues = "https://github.com/ibanFR/semantic-release-python/issues"
+```
 
 For more details on how to configure the `pyproject.toml` file, refer to [Writing your pyproject.toml] in the Python 
 Packaging User Guide.
@@ -41,6 +65,10 @@ build source and binary distributions of your package.
 
 
 ## Upload to the package distribution service (PyPI)
+
+See:
+
+- https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/
 
 ## Other sources and inspiration
 
