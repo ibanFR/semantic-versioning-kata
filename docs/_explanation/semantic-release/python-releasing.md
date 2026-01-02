@@ -53,6 +53,14 @@ Issues = "https://github.com/ibanFR/semantic-release-python/issues"
 For more details on how to configure the `pyproject.toml` file, refer to [Writing your pyproject.toml] in the Python 
 Packaging User Guide.
 
+## Create an account on TestPyPI
+
+TestPyPI is a separate instance of the Python Package Index (PyPI) that allows you to try out the distribution tools and
+process without worrying about affecting the real index.
+
+To register an account, go to https://test.pypi.org/account/register/ and complete the steps on that page. You will 
+also need to verify your email address before you're able to upload any packages.
+
 ## Build artifacts
 
 See:
