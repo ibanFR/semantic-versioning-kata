@@ -13,7 +13,7 @@
     [
       "@semantic-release/git",
       {
-        "assets": ["LiftButton/LiftButton.csproj"],
+        "assets": ["LiftButton/LiftButton.csproj", "CHANGELOG.md"],
         "message": "build(release): release version ${nextRelease.version}"
       }
     ],
