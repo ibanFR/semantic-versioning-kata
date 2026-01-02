@@ -15,7 +15,7 @@ See [Creation of virtual environments] in the Python documentation for more deta
 Install the required dependencies using pip:
 
 ```shell
-python -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ## Run the tests
@@ -23,7 +23,7 @@ python -m pip install -r requirements.txt
 To run the tests, use the following command:
 
 ```shell
-python -m pytest
+PYTHONPATH=src:tests python3 -m pytest
 ```
 
 [Creation of virtual environments]: https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-a-new-virtual-environment
