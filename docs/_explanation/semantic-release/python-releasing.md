@@ -9,7 +9,6 @@ nav_order: 1
 
 Python [Distribution Packages] are the standard mechanism for distributing and installing Python libraries and
 applications. 
-
 {: .fs-6 .fw-300 }
 
 Python packages can be published to the [Python Package Index (PyPI)], the default package repository for the Python
@@ -96,7 +95,7 @@ For more details on how to configure the GitHub Actions workflow for publishing 
 
 
 [Distribution Packages]: https://packaging.python.org/en/latest/glossary/#term-Distribution-Package
-[PyPI]: https://pypi.org/
+[Python Package Index (PyPI)]: https://pypi.org/
 [Writing your pyproject.toml]: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#writing-pyproject-toml
 [Trusted Publishing]: https://docs.pypi.org/trusted-publishers/
 [Python Packaging User Guide]: https://packaging.python.org/en/latest/
