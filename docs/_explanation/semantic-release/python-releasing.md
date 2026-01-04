@@ -38,7 +38,6 @@ Change `authors` to include your name and email address.
 ```toml
 authors = [
     { name="Iván Fernández", email="ibanFR@users.noreply.github.com" },
-
 ]
 ```
 
@@ -57,15 +56,16 @@ Packaging User Guide.
 TestPyPI is a separate instance of the Python Package Index (PyPI) that allows you to try out the distribution tools and
 process without worrying about affecting the real index.
 
-To register an account, go to https://test.pypi.org/account/register/ and complete the steps on that page. You will 
-also need to verify your email address before you're able to upload any packages.
+To register an account, go to [https://test.pypi.org/account/register/](https://test.pypi.org/account/register/) and
+complete the steps on that page. You will also need to verify your email address before you're able to upload any
+packages.
 
 ## Configure Trusted Publishing
 
 This guide relies on PyPI’s [Trusted Publishing] implementation to connect to GitHub Actions. To add a new trusted 
 publisher follow these steps:
 
-1. Go to https://test.pypi.org/manage/account/publishing/.
+1. Go to [https://test.pypi.org/manage/account/publishing/](https://test.pypi.org/manage/account/publishing/).
 2. Fill in the name you wish to publish your new PyPI project under (the `name` value in your `pyproject.toml`), the
    GitHub repository owner's name, the repository name, and the filename of the release publishing workflow (`python.
    yml`). 
@@ -77,10 +77,8 @@ In your GitHub repository, open the `.github/workflows/python.yml` file and upda
 package name:
 
 ```yaml
-  publish-to-testpypi:
-    name: Publish Python 🐍 distribution 📦 to TestPyPI
-    needs:
-      - build-distribution-packages
+jobs:
+  semantic-release:
     runs-on: ubuntu-latest
 
     environment:
