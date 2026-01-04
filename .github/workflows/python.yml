@@ -14,11 +14,11 @@ on:
       - "python/**"
 
 permissions:
-  # Permissions for Semantic Release step
+  # Permissions required for Semantic Release step
   contents: write
   issues: write
   pull-requests: write
-  # IMPORTANT: this permission is mandatory for Trusted Publishing
+  # Permission required for Trusted Publishing
   id-token: write
 
 jobs:
