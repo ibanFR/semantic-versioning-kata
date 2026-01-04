@@ -42,26 +42,15 @@ jobs:
       - name: Test
         run: dotnet test ${{ env.SOLUTION_PATH }} --no-build --verbosity normal
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "lts/*"
-
-      - name: Install dependencies
-        working-directory: ./csharp
-        run: npm install @semantic-release/changelog @semantic-release/git @semantic-release/exec
-
-      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
-        working-directory: ./csharp
-        run: npm audit signatures
-
-      - name: Release
+      - name: Semantic Release
         id: release
-        working-directory: ./csharp
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+        uses: cycjimmy/semantic-release-action@v6
+        with:
+          working_directory: ./csharp
+          extra_plugins: |
+            @semantic-release/changelog
+            @semantic-release/git
+            @semantic-release/exec
 
       - name: 'Publish NuGet package'
         if: ${{ steps.release.outputs.new_release_version }}
