@@ -94,6 +94,19 @@ For example:
 </developers>
 ```
 
+## SCM information
+
+In your `pom.xml` file, add a `<scm>` section to provide information about your project's source control system. 
+For example, if your project is hosted on GitHub:
+
+```xml
+<scm>
+  <connection>scm:git:git://github.com/johndoe/my-awesome-library.git</connection>
+  <developerConnection>scm:git:ssh://github.com:johndoe/my-awesome-library.git</developerConnection>
+  <url>http://github.com/johndoe/my-awesome-library/tree/master</url>
+</scm>
+```
+
 ## Other sources and inspiration
 
 - https://maven.apache.org/repository/guide-central-repository-upload.html

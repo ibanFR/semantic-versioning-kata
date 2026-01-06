@@ -19,6 +19,12 @@
         </license>
     </licenses>
 
+    <scm>
+        <connection>scm:git:git://github.com/ibanFR/semantic-release-kata.git</connection>
+        <developerConnection>scm:git:ssh://github.com:ibanFR/semantic-release-kata.git</developerConnection>
+        <url>https://github.com/ibanFR/semantic-release-kata/tree/main</url>
+    </scm>
+
     <developers>
         <developer>
             <name>Iván Fernández</name>
