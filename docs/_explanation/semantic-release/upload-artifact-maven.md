@@ -31,8 +31,9 @@ for free or sign in using your GitHub, Google, or LinkedIn account.
 
 Before you can upload artifacts, you need to create a namespace (also known as a group ID) for your project. 
 
-If you have signed up with your GitHub account, Sonatype has automatically created a namespace for you based on your
-GitHub username. For example, if your GitHub username is `johnDoe`, you could use `io.github.johnDoe` as your group ID.
+If you have signed up with your GitHub account, Sonatype has automatically created a verified namespace for you based on
+your GitHub username. For example, if your GitHub username is `johnDoe`, you could use `io.github.johnDoe` as your group
+ID.
 
 You can use this namespace or create a new one. See [Register a Namespace] for more information.
 
