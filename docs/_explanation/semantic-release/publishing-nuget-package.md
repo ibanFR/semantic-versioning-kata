@@ -50,6 +50,10 @@ packages. Instructions for enabling 2FA can be found at [How to turn two-step ve
 Once you have your Microsoft account ready, follow the steps from the [Individual accounts on NuGet.org] to create your
 NuGet.org account.
 
+## Create your NuGet API key
+
+To create your NuGet API key, follow instructions at [Acquire an API key].
+
 ## Create a secret for the NuGet API key
 
 - https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets
@@ -71,6 +75,7 @@ See [Publish NuGet packages].
 [An introduction to NuGet]: https://learn.microsoft.com/en-us/nuget/what-is-nuget
 [How to turn two-step verification on or off for your Microsoft account]: https://support.microsoft.com/en-gb/account-billing/how-to-use-two-step-verification-with-your-microsoft-account-c7910146-672f-01e9-50a0-93b4585e7eb4
 [Individual accounts on NuGet.org]: https://learn.microsoft.com/en-us/nuget/nuget-org/individual-accounts#add-a-new-individual-account
+[Acquire an API key]: https://learn.microsoft.com/en-us/nuget/nuget-org/scoped-api-keys#acquire-an-api-key
 [Create a NuGet package with the dotnet CLI]: https://learn.microsoft.com/en-us/nuget/create-packages/creating-a-package-dotnet-cli
 [Publish NuGet packages]: https://learn.microsoft.com/en-us/nuget/nuget-org/publish-a-package
 [.NET Package Management with NuGet for Beginners]: https://learn.microsoft.com/en-us/shows/dotnet-package-management-with-nuget-for-beginners/
