@@ -26,19 +26,15 @@ jobs:
       - name: Run Tests
         working-directory: ./java
         run: mvn test
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+
+      - name: Semantic Release
+        id: release
+        uses: cycjimmy/semantic-release-action@v6
         with:
-          node-version: "lts/*"
-      - name: Install dependencies
-        working-directory: ./java
-        run: npm install @semantic-release/changelog @semantic-release/git @semantic-release/exec
-      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
-        working-directory: ./java
-        run: npm audit signatures
-      - name: Release
-        working-directory: ./java
+          working_directory: ./python
+          extra_plugins: |
+            @semantic-release/changelog
+            @semantic-release/git
+            @semantic-release/exec
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
