@@ -3,12 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.ibanfr</groupId>
-    <artifactId>semantic-release-kata</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>lift-button-java</artifactId>
+    <version>0.1.0</version>
+
     <packaging>jar</packaging>
 
-    <name>semantic-release-kata</name>
-    <url>http://maven.apache.org</url>
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Java implementation of the LiftButton software</description>
+    <url>https://ibanfr.github.io/semantic-release-kata/</url>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
