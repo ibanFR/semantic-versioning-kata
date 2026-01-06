@@ -37,6 +37,33 @@ ID.
 
 You can use this namespace or create a new one. See [Register a Namespace] for more information.
 
+## Update project coordinates
+
+In your Maven project's `pom.xml` file, update the `<groupId>`, `<artifactId>`, and `<version>` elements to match
+your desired coordinates. 
+
+For example:
+
+```xml
+<groupId>io.github.johnDoe</groupId>
+<artifactId>my-awesome-library</artifactId>
+<version>0.1.0</version>
+```
+
+## Update project name, description, and URL
+
+In your `pom.xml` file, update the `<name>`, `<description>`, and `<url>` elements to provide more information about
+your project.
+
+For example:
+
+```xml
+<name>My Awesome Library</name>
+<description>A library that does awesome things.</description>
+<url>https://ibanfr.github.io/semantic-release-kata/</url>     
+```
+
+
 
 ## Other sources and inspiration
 
