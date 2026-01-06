@@ -54,28 +54,26 @@ NuGet.org account.
 
 To create your NuGet API key, follow instructions at [Acquire an API key].
 
-## Create a secret for the NuGet API key
+## Create a secret for the NuGet API key in your GitHub repository
 
-- https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets
+To securely store your NuGet API key in your GitHub repository, you need to create a secret. 
 
-## Create a NuGet package
-
-See [Create a NuGet package with the dotnet CLI].
-
-## Publishing a NuGet package
-
-See [Publish NuGet packages].
+Follow the instructions at
+[Use secrets in GitHub Actions] to create a new secret named `NUGET_TOKEN` and set its value to your NuGet API key.
 
 ## Other sources and inspiration
 
- - [.NET Package Management with NuGet for Beginners]
- - [Automating Releases of .NET SDKs using Semantic Release]
+- [.NET Package Management with NuGet for Beginners]
+- [Create a NuGet package with the dotnet CLI]
+- [Publish NuGet packages]
+- [Automating Releases of .NET SDKs using Semantic Release]
 
 [NuGet]: https://www.nuget.org/
 [An introduction to NuGet]: https://learn.microsoft.com/en-us/nuget/what-is-nuget
 [How to turn two-step verification on or off for your Microsoft account]: https://support.microsoft.com/en-gb/account-billing/how-to-use-two-step-verification-with-your-microsoft-account-c7910146-672f-01e9-50a0-93b4585e7eb4
 [Individual accounts on NuGet.org]: https://learn.microsoft.com/en-us/nuget/nuget-org/individual-accounts#add-a-new-individual-account
 [Acquire an API key]: https://learn.microsoft.com/en-us/nuget/nuget-org/scoped-api-keys#acquire-an-api-key
+[Use secrets in GitHub Actions]: https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets
 [Create a NuGet package with the dotnet CLI]: https://learn.microsoft.com/en-us/nuget/create-packages/creating-a-package-dotnet-cli
 [Publish NuGet packages]: https://learn.microsoft.com/en-us/nuget/nuget-org/publish-a-package
 [.NET Package Management with NuGet for Beginners]: https://learn.microsoft.com/en-us/shows/dotnet-package-management-with-nuget-for-beginners/
