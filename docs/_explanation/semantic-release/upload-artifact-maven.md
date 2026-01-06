@@ -63,6 +63,19 @@ For example:
 <url>https://ibanfr.github.io/semantic-release-kata/</url>     
 ```
 
+## License information
+
+In your `pom.xml` file, add a `<licenses>` section to specify the license under which your project is distributed.
+For example, to specify the MIT License:
+
+```xml
+<licenses>
+    <license>
+        <name>MIT License</name>
+        <url>https://opensource.org/license/mit</url>
+    </license>
+</licenses>
+```
 
 
 ## Other sources and inspiration
