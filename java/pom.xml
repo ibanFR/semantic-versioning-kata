@@ -19,6 +19,15 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <name>Iván Fernández</name>
+            <email>ibanFR@users.noreply.github.com</email>
+            <organization>IbanFR</organization>
+            <organizationUrl>https://ibanfr.github.io/</organizationUrl>
+        </developer>
+    </developers>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>

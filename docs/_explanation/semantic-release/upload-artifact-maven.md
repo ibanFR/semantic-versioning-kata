@@ -40,7 +40,7 @@ You can use this namespace or create a new one. See [Register a Namespace] for m
 ## Update project coordinates
 
 In your Maven project's `pom.xml` file, update the `<groupId>`, `<artifactId>`, and `<version>` elements to match
-your desired coordinates. 
+your own coordinates. 
 
 For example:
 
@@ -60,7 +60,7 @@ For example:
 ```xml
 <name>My Awesome Library</name>
 <description>A library that does awesome things.</description>
-<url>https://ibanfr.github.io/semantic-release-kata/</url>     
+<url>https://johndoe.github.io/my-awesome-library</url>     
 ```
 
 ## License information
@@ -77,11 +77,28 @@ For example, to specify the MIT License:
 </licenses>
 ```
 
+## Developer information
+
+In your `pom.xml` file, add a `<developers>` section to provide information about the developers of your project.
+
+For example:
+
+```xml
+<developers>
+    <developer>
+      <name>John Doe</name>
+      <email>john.doe@sonatype.com</email>
+      <organization>Sonatype</organization>
+      <organizationUrl>http://www.sonatype.com</organizationUrl>
+    </developer>
+</developers>
+```
 
 ## Other sources and inspiration
 
 - https://maven.apache.org/repository/guide-central-repository-upload.html
 - https://docs.github.com/en/actions/tutorials/publish-packages/publish-java-packages-with-maven
+- https://github.com/simpligility/ossrh-demo/tree/master
 
 [Central Repository]: https://central.sonatype.org/pages/about/
 [Apache Maven]: https://maven.apache.org/
