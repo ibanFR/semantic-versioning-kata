@@ -25,7 +25,7 @@ A package is a compiled library with its descriptive metadata.
 ## Add package metadata to project file
 
 To publish a NuGet package, you need to add some metadata to your project file (`.csproj`). Here is an example of the
-metadata you might include:
+necessary properties to include:
 
 ```xml
 <PropertyGroup>
