@@ -39,6 +39,16 @@ necessary properties to include:
 
 `PackageId` should be unique across NuGet.org. For example, you can prefix it with your GitHub username: `<PackageId>YourGitHubUsername.SemanticRelease.LiftButton</PackageId>`.
 
+## Create a NuGet.org account
+
+To create a NuGet.org account, you need to have a personal Microsoft account. If you don't have one, you can create 
+it [here](https://signup.live.com/?lic=1).
+
+Make sure to enable two-factor authentication (2FA) for your Microsoft account, as it is required to publish NuGet
+packages. Instructions for enabling 2FA can be found at [How to turn two-step verification on or off for your Microsoft account].
+
+Once you have your Microsoft account ready, follow the steps from the [Individual accounts on NuGet.org] to create your
+NuGet.org account.
 
 ## Create a secret for the NuGet API key
 
@@ -59,6 +69,8 @@ See [Publish NuGet packages].
 
 [NuGet]: https://www.nuget.org/
 [An introduction to NuGet]: https://learn.microsoft.com/en-us/nuget/what-is-nuget
+[How to turn two-step verification on or off for your Microsoft account]: https://support.microsoft.com/en-gb/account-billing/how-to-use-two-step-verification-with-your-microsoft-account-c7910146-672f-01e9-50a0-93b4585e7eb4
+[Individual accounts on NuGet.org]: https://learn.microsoft.com/en-us/nuget/nuget-org/individual-accounts#add-a-new-individual-account
 [Create a NuGet package with the dotnet CLI]: https://learn.microsoft.com/en-us/nuget/create-packages/creating-a-package-dotnet-cli
 [Publish NuGet packages]: https://learn.microsoft.com/en-us/nuget/nuget-org/publish-a-package
 [.NET Package Management with NuGet for Beginners]: https://learn.microsoft.com/en-us/shows/dotnet-package-management-with-nuget-for-beginners/
