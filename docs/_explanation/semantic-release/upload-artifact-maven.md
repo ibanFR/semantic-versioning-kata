@@ -119,6 +119,8 @@ key pair.
 - https://maven.apache.org/repository/guide-central-repository-upload.html
 - https://docs.github.com/en/actions/tutorials/publish-packages/publish-java-packages-with-maven
 - https://github.com/simpligility/ossrh-demo/tree/master
+- https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#Publishing-using-Apache-Maven
+
 
 [Central Repository]: https://central.sonatype.org/pages/about/
 [Apache Maven]: https://maven.apache.org/
