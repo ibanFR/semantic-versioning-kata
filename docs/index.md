@@ -25,7 +25,7 @@ workflow.
 
 1. Understand the principles of Semantic Versioning (SemVer).
 2. Write semantic commit messages to document the nature of the changes made to the codebase.
-3. Explore how semantic-release uses the commit messages to automate software releases.
+3. Explore how semantic commit messages are used to automate software releases.
 
 ## Connect: How are version numbers assigned for your software? (⏱️ 5 min)
 
