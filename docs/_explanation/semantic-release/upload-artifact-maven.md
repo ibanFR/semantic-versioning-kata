@@ -113,11 +113,19 @@ To publish artifacts to the Central Repository, you must sign them with PGP. Thi
 which is used to securely sign your artifacts. 
 
 GnuPG (GPG), a free implementation of the OpenPGP standard, provides the tools needed to create and manage your key 
-pair:
+pair.
 
-```shell
-gpg --gen-key
-```
+1. Generate a GPG key pair by running the following command in your terminal:
+
+    ```shell
+    gpg --gen-key
+    ```
+   
+2. Export your public key by running the following command:
+
+    ```shell
+    gpg --export-secret-keys --armor YOUR_KEY_ID
+    ```
 
 For more details on how to install GPG and generate a key pair, see [GPG].
 
@@ -128,6 +136,7 @@ For more details on how to install GPG and generate a key pair, see [GPG].
 - https://docs.github.com/en/actions/tutorials/publish-packages/publish-java-packages-with-maven
 - https://github.com/simpligility/ossrh-demo/tree/master
 - https://github.com/actions/setup-java/blob/main/docs/advanced-usage.md#Publishing-using-Apache-Maven
+- https://medium.com/@jtbsorensen/publish-your-artifact-to-the-maven-central-repository-using-github-actions-15d3b5d9ce88
 
 
 [Central Repository]: https://central.sonatype.org/pages/about/
