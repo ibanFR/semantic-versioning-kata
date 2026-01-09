@@ -129,6 +129,12 @@ pair.
 
 For more details on how to install GPG and generate a key pair, see [GPG].
 
+## Generate a Portal Token
+
+To publish artifacts to the [Central Repository], you must create a User Token for authentication.
+
+Follow the steps in [Generating a Portal Token for Publishing] to generate your token. You will use this token when
+authenticating during the publishing process.
 
 ## Other sources and inspiration
 
@@ -145,3 +151,4 @@ For more details on how to install GPG and generate a key pair, see [GPG].
 [Sign in]: https://central.sonatype.com/
 [Register a Namespace]: https://central.sonatype.org/register/namespace/
 [GPG]: https://central.sonatype.org/publish/requirements/gpg
+[Generating a Portal Token for Publishing]: https://central.sonatype.org/publish/generate-portal-token/
