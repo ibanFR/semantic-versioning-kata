@@ -136,6 +136,15 @@ To publish artifacts to the [Central Repository], you must create a User Token f
 Follow the steps in [Generating a Portal Token for Publishing] to generate your token. You will use this token when
 authenticating during the publishing process.
 
+## Create GitHub Secrets
+
+In your GitHub repository, create the following secrets to store your GPG key and Sonatype credentials:
+
+- `MAVEN_GPG_PRIVATE_KEY`: Your GPG private key (exported in the previous step).
+- `MAVEN_GPG_PASSPHRASE`: The passphrase for your GPG private key.
+- `MAVEN_CENTRAL_USERNAME`: Your User Token from the Central Repository.
+- `MAVEN_CENTRAL_TOKEN`: Your Username to login to the Central Repository.
+
 ## Other sources and inspiration
 
 - https://maven.apache.org/repository/guide-central-repository-upload.html

@@ -24,6 +24,18 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Set up Maven Central Repository
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+          server-id: central
+          server-username: MAVEN_USERNAME
+          server-password: MAVEN_PASSWORD
+          gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }}
+          gpg-passphrase: MAVEN_GPG_PASSPHRASE
+
       - name: Run Tests
         working-directory: ./java
         run: mvn test
@@ -39,3 +51,17 @@ jobs:
             @semantic-release/exec
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish to Apache Maven Central
+        if: ${{ steps.release.outputs.new_release_version }}
+        working-directory: ./java
+        run: |
+          if [ -z "${{ secrets.MAVEN_CENTRAL_TOKEN }}" ]; then
+            echo "::warning::Maven Central secrets are missing. Skipping publish."
+            exit 0
+          fi
+          mvn --batch-mode deploy --activate-profiles release
+        env:
+          MAVEN_USERNAME: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
+          MAVEN_PASSWORD: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
