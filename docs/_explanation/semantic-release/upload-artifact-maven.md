@@ -107,12 +107,20 @@ For example, if your project is hosted on GitHub:
 </scm>
 ```
 
-## Generate GPG keys
+## Generate a Key Pair
 
-To sign your artifacts, you need to generate a GPG key pair. You can use tools like GnuPG to create your keys.
+To publish artifacts to the Central Repository, you must sign them with PGP. This requires generating a GPG key pair,
+which is used to securely sign your artifacts. 
 
-Follow the instructions for [Generating a Key Pair] to generate your
-key pair.
+GnuPG (GPG), a free implementation of the OpenPGP standard, provides the tools needed to create and manage your key 
+pair:
+
+```shell
+gpg --gen-key
+```
+
+For more details on how to install GPG and generate a key pair, see [GPG].
+
 
 ## Other sources and inspiration
 
@@ -127,4 +135,4 @@ key pair.
 [What is Maven?]: https://maven.apache.org/what-is-maven.html
 [Sign in]: https://central.sonatype.com/
 [Register a Namespace]: https://central.sonatype.org/register/namespace/
-[Generating a Key Pair]: https://central.sonatype.org/publish/requirements/gpg/#generating-a-key-pair
+[GPG]: https://central.sonatype.org/publish/requirements/gpg
