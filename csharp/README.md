@@ -19,3 +19,5 @@ Run the script with the desired version number and the path to the `.csproj` fil
 sh updateVersion.sh 1.2.3 LiftButton/LiftButton.csproj
 ```
 
+For more details, see the top-level [README.md](../README.md) file.
+
