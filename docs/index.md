@@ -139,7 +139,7 @@ the team will release this feature as a breaking change:
 3. After pushing your commit to the main branch, check your [repository's releases and tags] to see the new major 
    version created for the breaking change.
 
-## Conclusions: What are the benefits of releasing on every commit? (⏱️ 5 min)
+## Conclusions: When should you use semantic commit messages? (⏱️ 5 min)
 
 Now that you have experienced how semantic commit messages are used to release new features of the Lift Button, ask the
 group to think about:
